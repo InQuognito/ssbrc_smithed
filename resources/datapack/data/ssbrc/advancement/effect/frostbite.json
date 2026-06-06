@@ -1,0 +1,1 @@
+{"parent":"ssbrc:root","criteria":{"requirement":{"trigger":"minecraft:entity_hurt_player","conditions":{"damage":{"type":{"direct_entity":{"nbt":"{Tags:[\"ssbrc.effect.frostbite\"]}"}}}}}},"rewards":{"function":"ssbrc:game/fighter/_logic/effect/frostbite/increase"}}

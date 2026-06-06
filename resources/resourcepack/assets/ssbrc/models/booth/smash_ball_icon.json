@@ -1,0 +1,7 @@
+{
+	"parent": "ssbrc:template/item/hud",
+	"textures": {
+		"base": "ssbrc:booth/smash_ball_icon",
+		"particle": "ssbrc:booth/empty"
+	}
+}

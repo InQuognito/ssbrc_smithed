@@ -1,0 +1,4788 @@
+export
+
+var fighters = {
+	'mario': {
+		'series': 'super_mario_bros',
+		'stats': {
+			'armor': 'low',
+			'jump_strength': 'high',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'red',
+		'alignment': 'hero',
+		'miiverse_posts': 2,
+		'default': true,
+		'skins': {
+			'flower_power': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'penguin': {
+				'rarity': 'uncommon',
+				'color': 'blue',
+				'collection': 'winter'
+			},
+			'skeleton': {
+				'rarity': 'unique',
+				'price': 9999,
+				'color': 'white',
+				'invisible_player': true
+			},
+			'tennis': {
+				'rarity': 'rare',
+				'color': 'red'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'hammer': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 0.5,
+					'disable_blocking_for_seconds': 5.0
+				},
+				'default': {
+					'name': 'ssbrc.fighter.super_mario_bros.hammer',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'tennis': {
+					'name': 'ssbrc.fighter.super_mario_bros.tennis_racket',
+					'color': 'red'
+				}
+			},
+			'fireball': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mario/fireball',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mario.fireball',
+					'color': 'red'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'luigi': {
+		'series': 'super_mario_bros',
+		'stats': {
+			'armor': 'low',
+			'jump_strength': 'high',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_green',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'flower_power': {
+				'rarity': 'uncommon',
+				'color': 'aqua'
+			},
+			'penguin': {
+				'rarity': 'uncommon',
+				'color': 'blue',
+				'collection': 'winter'
+			},
+			'gooigi': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			},
+			'tennis': {
+				'rarity': 'rare',
+				'color': 'green'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'hammer': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 1,
+					'disable_blocking_for_seconds': 5.0
+				},
+				'default': {
+					'name': 'ssbrc.fighter.super_mario_bros.hammer',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'tennis': {
+					'name': 'ssbrc.fighter.super_mario_bros.tennis_racket',
+					'color': 'green'
+				}
+			},
+			'ice_ball': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'luigi/ice_ball',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.luigi.ice_ball',
+					'color': 'aqua'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'peach': {
+		'series': 'super_mario_bros',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'light_purple',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'flower_power': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'shadow_queen': {
+				'rarity': 'uncommon',
+				'color': 'dark_gray'
+			},
+			'golf': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'frying_pan': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 0.25,
+					'minimum_attack_charge': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.peach.frying_pan',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'golf_club': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 0.75,
+					'minimum_attack_charge': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.peach.golf_club',
+					'color': 'light_purple'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'tennis_racket': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 2,
+					'attack_speed': 1.5,
+					'minimum_attack_charge': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.super_mario_bros.tennis_racket',
+					'color': 'light_purple'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'turnip': {
+				'default': {
+					'name': 'ssbrc.fighter.peach.turnip',
+					'color': 'green'
+				}
+			}
+		}
+	},
+	'bowser': {
+		'series': 'super_mario_bros',
+		'stats': {
+			'armor': 'high',
+			'jump_strength': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'insane'
+		},
+		'color': 'green',
+		'alignment': 'villain',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'flower_power': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'dry_bowser': {
+				'rarity': 'rare',
+				'color': 'white'
+			},
+			'rookie': {
+				'rarity': 'common',
+				'color': 'blue'
+			},
+			'bowsette': {
+				'rarity': 'rare',
+				'color': 'yellow'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'power_band': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 8,
+					'attack_speed': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.bowser.power_band',
+					'color': 'dark_gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'donkey_kong': {
+		'series': 'donkey_kong',
+		'stats': {
+			'armor': 'low',
+			'jump_strength': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'gold',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'flower_power': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'super_kong': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'strikers': {
+				'rarity': 'uncommon',
+				'color': 'yellow'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'barrel': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.5,
+					'damage': {
+						'type': 'generic',
+						'amount': 6
+					},
+					'cooldown_group': 'donkey_kong/barrel',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.donkey_kong.barrel',
+					'color': 'gold'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'flower_power': {
+					'name': 'ssbrc.fighter.donkey_kong.barrel.flower_power',
+					'color': 'blue'
+				}
+			}
+		}
+	},
+	'king_k_rool': {
+		'series': 'donkey_kong',
+		'stats': {
+			'armor': 16,
+			'jump_strength': 'low',
+			'max_health': 20,
+			'movement_speed': -0.15,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_green',
+		'alignment': 'villain',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'kaptain': {
+				'rarity': 'rare',
+				'color': 'gold'
+			},
+			'baron': {
+				'rarity': 'rare',
+				'color': 'white'
+			},
+			'krusha': {
+				'rarity': 'rare',
+				'color': 'blue'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'body',
+		'forms': [
+			'default',
+			'cracked'
+		],
+		'items': {
+			'boxing_glove': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.king_k_rool.boxing_glove',
+					'color': 'red'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'blunderbuss': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'king_k_rool/blunderbuss',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.king_k_rool.blunderbuss',
+					'color': 'dark_gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'link': {
+		'series': 'the_legend_of_zelda',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'blue',
+		'alignment': 'hero',
+		'miiverse_posts': 2,
+		'default': true,
+		'skins': {
+			'awakening': {
+				'rarity': 'uncommon',
+				'color': 'gold'
+			},
+			'tunic_of_time': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			},
+			'dark_tunic': {
+				'rarity': 'rare',
+				'color': 'red'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'link_bow': {
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.link.link_bow.default',
+					'color': 'gray'
+				},
+				'gold': {
+					'name': 'ssbrc.fighter.link.link_bow.gold',
+					'color': 'gold'
+				},
+				'tunic_of_time': {
+					'name': 'ssbrc.fighter.link.link_bow.tunic_of_time',
+					'color': 'blue'
+				}
+			},
+			'hylian_shield': {
+				'type': 'shield',
+				'stats': {
+					'max_damage': 30,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.link.hylian_shield',
+					'color': 'blue'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'dark_tunic': {
+					'color': 'red'
+				}
+			},
+			'master_sword': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 2,
+					'cooldown_group': 'link/master_sword',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.link.master_sword',
+					'color': 'aqua'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'dark_tunic': {
+					'color': 'red'
+				}
+			},
+			'sheikah_slate': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'link/sheikah_slate',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.link.sheikah_slate',
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'toon_link': {
+		'series': 'the_legend_of_zelda',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'green',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'second_sword': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'third_sword': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'fourth_sword': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			},
+			'pajamas': {
+				'rarity': 'uncommon',
+				'color': 'aqua'
+			},
+			'engineer': {
+				'rarity': 'rare',
+				'color': 'blue'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'grappling_hook': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'toon_link/grappling_hook',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.toon_link.grappling_hook',
+					'color': 'white'
+				}
+			},
+			'heros_bow': {
+				'default': {
+					'name': 'ssbrc.fighter.toon_link.heros_bow',
+					'color': 'blue'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'heros_shield': {
+				'type': 'shield',
+				'stats': {
+					'max_damage': 30,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.toon_link.heros_shield',
+					'color': 'blue'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'master_sword': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.link.master_sword',
+					'color': 'aqua'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'toon_link_boomerang': {
+				'type': 'consumable',
+				'stats': {
+					'cooldown_group': 'toon_link/boomerang',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.toon_link.boomerang',
+					'color': 'red'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'zelda': {
+		'series': 'the_legend_of_zelda',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'blue',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'twilight_princess': {
+				'rarity': 'uncommon',
+				'color': 'dark_purple'
+			},
+			'hyrule_warriors': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			},
+			'shadow_zelda': {
+				'rarity': 'uncommon',
+				'color': 'dark_gray'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'zelda_dagger': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 2,
+					'attack_speed': 2.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.weapon.dagger.default',
+					'color': 'white'
+				}
+			},
+			'zelda_flail': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 0.75,
+					'min_reach': 2,
+					'hitbox_margin': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.weapon.flail.default',
+					'color': 'white'
+				}
+			},
+			'zelda_rapier': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.weapon.rapier.default',
+					'color': 'white'
+				}
+			},
+			'zelda_spear': {
+				'type': 'spear',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 0.7,
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.weapon.spear.default',
+					'color': 'white'
+				}
+			},
+			'zelda_bomb': {
+				'type': 'ability',
+				'group': 'dungeon_item',
+				'stats': {
+					'cooldown_group': 'zelda/bomb',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.dungeon_item.bomb',
+					'color': 'blue'
+				}
+			},
+			'zelda_boomerang': {
+				'type': 'ability',
+				'group': 'dungeon_item',
+				'stats': {
+					'cooldown_group': 'zelda/boomerang',
+					'cooldown': 0.05
+				},
+				'default': {
+					'name': 'ssbrc.fighter.the_legend_of_zelda.boomerang',
+					'color': 'gold'
+				}
+			},
+			'zelda_bow': {
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.2
+				},
+				'group': 'dungeon_item',
+				'default': {
+					'name': 'item.minecraft.bow',
+					'color': 'white'
+				}
+			},
+			'fire_bow': {
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.2
+				},
+				'group': 'dungeon_item',
+				'default': {
+					'name': 'ssbrc.fighter.zelda.dungeon_item.fire_bow',
+					'color': 'red'
+				}
+			},
+			'poison_bow': {
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.2
+				},
+				'group': 'dungeon_item',
+				'default': {
+					'name': 'ssbrc.fighter.zelda.dungeon_item.poison_bow',
+					'color': 'green'
+				}
+			},
+			'fire_rod': {
+				'type': 'ability',
+				'group': 'dungeon_item',
+				'stats': {
+					'cooldown_group': 'zelda/fire_rod',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.dungeon_item.fire_rod',
+					'color': 'red'
+				}
+			},
+			'ice_rod': {
+				'type': 'ability',
+				'group': 'dungeon_item',
+				'stats': {
+					'cooldown_group': 'zelda/ice_rod',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.dungeon_item.ice_rod',
+					'color': 'aqua'
+				}
+			},
+			'magic_boomerang': {
+				'type': 'ability',
+				'group': 'dungeon_item',
+				'stats': {
+					'cooldown_group': 'zelda/boomerang',
+					'cooldown': 0.05
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.dungeon_item.magic_boomerang',
+					'color': 'blue'
+				}
+			},
+			'red_potion': {
+				'type': 'ability',
+				'group': 'dungeon_item',
+				'stats': {
+					'cooldown_group': 'zelda/red_potion',
+					'cooldown': 0.05,
+					'use_duration': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.dungeon_item.red_potion',
+					'color': 'red'
+				}
+			},
+			'goron_locket': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.goron_locket',
+					'color': 'red'
+				}
+			},
+			'nayrus_ring': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.nayrus_ring',
+					'color': 'aqua'
+				}
+			},
+			'pegasus_anklet': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.pegasus_anklet',
+					'color': 'yellow'
+				}
+			},
+			'ring_of_blasting': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.ring_of_blasting',
+					'color': 'red'
+				}
+			},
+			'ring_of_charisma': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.ring_of_charisma',
+					'color': 'green'
+				}
+			},
+			'ring_of_risk': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.ring_of_risk',
+					'color': 'red'
+				}
+			},
+			'small_shield': {
+				'type': 'shield',
+				'group': 'passive_item',
+				'stats': {
+					'max_damage': 20,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.small_shield',
+					'color': 'blue'
+				}
+			},
+			'torch_of_wisdom': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.torch_of_wisdom',
+					'color': 'yellow'
+				}
+			},
+			'zoras_flippers': {
+				'type': 'null',
+				'group': 'passive_item',
+				'stats': {},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.passive_item.zoras_flippers',
+					'color': 'blue'
+				}
+			},
+			'great_fairy_blessing': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'zelda/great_fairy_blessing',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.great_fairy_blessing',
+					'color': 'green'
+				}
+			},
+			'inventory_refresh': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'zelda/inventory_refresh',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.zelda.inventory_refresh',
+					'color': 'red'
+				}
+			}
+		}
+	},
+	'ganondorf': {
+		'series': 'the_legend_of_zelda',
+		'stats': {
+			'armor': 'medium',
+			'jump_strength': 'low',
+			'movement_speed': -0.25,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'red',
+		'alignment': 'villain',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'ocarina_of_time': {
+				'rarity': 'rare',
+				'color': 'red'
+			},
+			'wind_waker': {
+				'rarity': 'rare',
+				'color': 'aqua'
+			},
+			'tears_of_the_kingdom': {
+				'rarity': 'rare',
+				'color': 'dark_red'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'sword': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 8,
+					'attack_speed': 0.3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ganondorf.sword.default',
+					'color': 'dark_gray'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'ocarina_of_time': {
+					'name': 'ssbrc.fighter.ganondorf.sword.ocarina_of_time',
+					'color': 'dark_gray'
+				},
+				'tears_of_the_kingdom': {
+					'name': 'ssbrc.fighter.ganondorf.sword.tears_of_the_kingdom',
+					'color': 'dark_gray'
+				},
+				'wind_waker': {
+					'name': 'ssbrc.fighter.ganondorf.sword.wind_waker',
+					'color': 'white'
+				}
+			}
+		}
+	},
+	'samus': {
+		'series': 'metroid',
+		'stats': {
+			'armor': 'low',
+			'movement_speed': -0.1,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'gold',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'power_suit_dread': {
+				'rarity': 'rare',
+				'color': 'aqua'
+			},
+			'varia_suit_super': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'gravity_suit_super': {
+				'rarity': 'uncommon',
+				'color': '#BB2EF4'
+			},
+			'phazon_suit': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'cloaked': {
+				'rarity': 'uncommon',
+				'color': 'gold',
+				'forms_isolated_to': 'body'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'power_beam': {
+				'type': 'hybrid',
+				'group': 'arm_cannon',
+				'stats': {
+					'attack_damage': 1.5,
+					'attack_speed': 0.5,
+					'cooldown_group': 'samus/power_beam',
+					'cooldown': 0.25
+				},
+				'default': {
+					'name': 'ssbrc.fighter.samus.power_beam',
+					'color': 'gold'
+				}
+			},
+			'plasma_beam': {
+				'type': 'hybrid',
+				'group': 'arm_cannon',
+				'stats': {
+					'attack_damage': 1.5,
+					'attack_speed': 0.5,
+					'cooldown_group': 'samus/plasma_beam',
+					'cooldown': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.samus.plasma_beam',
+					'color': 'dark_red'
+				}
+			},
+			'wave_beam': {
+				'type': 'hybrid',
+				'group': 'arm_cannon',
+				'stats': {
+					'attack_damage': 1.5,
+					'attack_speed': 0.5,
+					'cooldown_group': 'samus/wave_beam',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.samus.wave_beam',
+					'color': 'dark_purple'
+				}
+			}
+		}
+	},
+	'dark_samus': {
+		'series': 'metroid',
+		'stats': {
+			'armor': 'low',
+			'movement_speed': -0.05,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'aqua',
+		'alignment': 'villain',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'prime_2': {
+				'rarity': 'rare',
+				'color': 'dark_gray'
+			},
+			'prime_3': {
+				'rarity': 'uncommon',
+				'color': 'aqua'
+			},
+			'prototype': {
+				'rarity': 'legendary',
+				'color': 'gold'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'phazon_beam': {
+				'type': 'custom_swing_bow',
+				'stats': {
+					'attack_damage': 0,
+					'attack_speed': 0.5,
+					'max_reach': 0,
+					'swing_animation': 'none',
+					'use_sound': 'fighter.dark_samus.phazon_beam.activate.1'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.dark_samus.phazon_beam',
+					'color': 'aqua'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'phazon_overload': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'dark_samus/phazon_overload',
+					'cooldown': 0.05
+				},
+				'default': {
+					'name': 'ssbrc.fighter.dark_samus.phazon_overload',
+					'color': 'aqua'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'kirby': {
+		'series': 'kirby',
+		'stats': {
+			'armor': 'negligible',
+			'safe_fall_distance': 'infinite',
+			'weight': 'medium'
+		},
+		'color': 'light_purple',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'red': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'orange': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'yellow': {
+				'rarity': 'uncommon',
+				'color': 'yellow'
+			},
+			'green': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			},
+			'ocean': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'grape': {
+				'rarity': 'uncommon',
+				'color': 'dark_purple'
+			},
+			'pink': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			},
+			'white': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'chalk': {
+				'rarity': 'uncommon',
+				'color': 'gray'
+			},
+			'shadow': {
+				'rarity': 'uncommon',
+				'color': 'dark_gray'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'head',
+		'forms': [
+			'default'
+		],
+		'items': {
+			'hammer': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 1,
+					'disable_blocking_for_seconds': 5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.kirby.hammer',
+					'color': 'light_purple'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'katana': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.kirby.katana',
+					'color': 'light_purple'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'tornado': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.kirby.tornado',
+					'color': 'light_purple'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'gooey': {
+		'series': 'kirby',
+		'stats': {
+			'armor': 'negligible',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_blue',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'red': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'orange': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'yellow': {
+				'rarity': 'uncommon',
+				'color': 'yellow'
+			},
+			'green': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			},
+			'ocean': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'grape': {
+				'rarity': 'uncommon',
+				'color': 'dark_purple'
+			},
+			'pink': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			},
+			'white': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'chalk': {
+				'rarity': 'uncommon',
+				'color': 'gray'
+			},
+			'shadow': {
+				'rarity': 'uncommon',
+				'color': 'dark_gray'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'love_love_stick': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 1,
+					'cooldown_group': 'gooey/love_love_stick',
+					'cooldown': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.gooey.love_love_stick',
+					'color': 'yellow'
+				}
+			}
+		}
+	},
+	'fox': {
+		'series': 'star_fox',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'white',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'assault': {
+				'rarity': 'rare',
+				'color': 'blue'
+			},
+			'adventures': {
+				'rarity': 'uncommon',
+				'color': 'yellow'
+			},
+			'g_zero': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'fox_blaster': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'fox/projectile',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.star_fox.blaster',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'krazoan_staff': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 3,
+					'cooldown_group': 'fox/projectile',
+					'cooldown': 1.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.fox.krazoan_staff',
+					'color': 'gold'
+				}
+			},
+			'reflector': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'fox/reflector',
+					'cooldown': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.fox.reflector',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'wolf': {
+		'series': 'star_fox',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_purple',
+		'alignment': 'villain',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'assault': {
+				'rarity': 'rare',
+				'color': 'green'
+			},
+			'star_fox_2': {
+				'rarity': 'rare',
+				'color': 'gray'
+			},
+			'starlink': {
+				'rarity': 'uncommon',
+				'color': 'gold'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'grenade': {
+				'type': 'ability',
+				'stats': {
+					'use_duration': 4,
+					'cooldown_group': 'wolf/grenade',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.wolf.grenade',
+					'color': 'yellow'
+				}
+			},
+			'wolf_slash': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 1.5,
+					'damage': {
+						'type': 'generic',
+						'amount': 14
+					},
+					'cooldown_group': 'wolf/wolf_flash',
+					'cooldown': 4
+				},
+				'default': {
+					'name': 'ssbrc.fighter.wolf.wolf_slash',
+					'color': 'light_purple'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'assault': {
+					'color': 'green'
+				},
+				'star_fox_2': {
+					'color': 'gold'
+				},
+				'starlink': {
+					'color': 'gold'
+				}
+			},
+			'wolf_blaster': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'wolf/wolf_blaster',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.star_fox.blaster',
+					'color': 'light_purple'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'assault': {
+					'color': 'green'
+				},
+				'star_fox_2': {
+					'color': 'dark_gray'
+				},
+				'starlink': {
+					'color': 'dark_gray'
+				}
+			}
+		}
+	},
+	'pokemon_trainer': {
+		'series': 'pokemon',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'red',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'shiny': {
+				'rarity': 'legendary',
+				'color': 'dark_gray'
+			},
+			'dawn': {
+				'rarity': 'legendary',
+				'color': 'light_purple'
+			},
+			'victor': {
+				'rarity': 'legendary',
+				'color': 'dark_blue'
+			},
+			'juliana': {
+				'rarity': 'legendary',
+				'color': 'dark_purple'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'trainer',
+			'charizard',
+			'ivysaur',
+			'squirtle'
+		],
+		'items': {
+			'bite': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.bite',
+					'color': 'dark_gray'
+				}
+			},
+			'water_gun': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'pokemon_trainer/water_gun',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.water_gun',
+					'color': 'blue'
+				}
+			},
+			'knock_off': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.knock_off',
+					'color': 'dark_gray'
+				}
+			},
+			'leech_seed': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'pokemon_trainer/leech_seed',
+					'cooldown': 5,
+					'max_stack_size': 4,
+					'count': 4
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.leech_seed',
+					'color': 'green'
+				}
+			},
+			'poison_powder': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'pokemon_trainer/poison_powder',
+					'cooldown': 10
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.poison_powder',
+					'color': 'light_purple'
+				}
+			},
+			'rock_smash': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.rock_smash',
+					'color': 'dark_gray'
+				}
+			},
+			'flare_blitz': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'pokemon_trainer/flare_blitz',
+					'cooldown': 4.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.flare_blitz',
+					'color': 'red'
+				}
+			},
+			'earthquake': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'pokemon_trainer/earthquake',
+					'cooldown': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon_trainer.earthquake',
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'pikachu': {
+		'series': 'pokemon',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'yellow',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'shiny': {
+				'rarity': 'legendary',
+				'color': 'yellow'
+			},
+			'ditto': {
+				'rarity': 'common',
+				'color': 'light_purple'
+			},
+			'shadow': {
+				'rarity': 'common',
+				'color': 'dark_gray'
+			},
+			'cosplay_libre': {
+				'rarity': 'uncommon',
+				'color': 'gold'
+			},
+			'holiday': {
+				'rarity': 'rare',
+				'color': 'red',
+				'collection': 'winter'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'mega_punch': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon.mega_punch',
+					'color': 'white'
+				}
+			},
+			'thunder_jolt': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'pikachu/thunder_jolt',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pikachu.thunder_jolt',
+					'color': 'yellow'
+				}
+			},
+			'electric_terrain': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'pikachu/electric_terrain',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pikachu.electric_terrain',
+					'color': 'yellow'
+				}
+			}
+		}
+	},
+	'jigglypuff': {
+		'series': 'pokemon',
+		'stats': {
+			'armor': 'low',
+			'jump_strength': 'low',
+			'movement_speed': -0.15,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'light_purple',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'shiny': {
+				'rarity': 'legendary',
+				'color': 'light_purple'
+			},
+			'ditto': {
+				'rarity': 'common',
+				'color': 'light_purple'
+			},
+			'shadow': {
+				'rarity': 'common',
+				'color': 'dark_gray'
+			},
+			'scream_tail': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'head',
+		'forms': [
+			'default',
+			'rest'
+		],
+		'items': {
+			'pound': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 0.75,
+					'disable_blocking_for_seconds': 5.0
+				},
+				'default': {
+					'name': 'ssbrc.fighter.jigglypuff.pound',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'hyper_voice': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'jigglypuff/hyper_voice',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.jigglypuff.hyper_voice',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'rest': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'jigglypuff/rest',
+					'cooldown': 0.05
+				},
+				'default': {
+					'name': 'ssbrc.fighter.jigglypuff.rest',
+					'color': 'white'
+				}
+			}
+		}
+	},
+	'lucario': {
+		'series': 'pokemon',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'blue',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'shiny': {
+				'rarity': 'legendary',
+				'color': 'yellow'
+			},
+			'shadow': {
+				'rarity': 'common',
+				'color': 'dark_gray'
+			},
+			'mirror': {
+				'rarity': 'rare',
+				'color': 'red'
+			},
+			'costume_party': {
+				'rarity': 'rare',
+				'color': 'dark_gray',
+				'collection': 'autumn'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'aura_sphere': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'lucario/aura_sphere',
+					'cooldown': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon.aura_sphere',
+					'color': 'blue'
+				},
+				'mirror': {
+					'color': 'red'
+				}
+			},
+			'close_combat': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'lucario/close_combat',
+					'cooldown': 8
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon.close_combat',
+					'color': 'blue'
+				},
+				'mirror': {
+					'color': 'red'
+				}
+			},
+			'force_palm': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 2,
+					'cooldown_group': 'lucario/force_palm',
+					'cooldown': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pokemon.force_palm',
+					'color': 'blue'
+				},
+				'mirror': {
+					'color': 'red'
+				}
+			}
+		}
+	},
+	'greninja': {
+		'series': 'pokemon',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'blue',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'shiny': {
+				'rarity': 'legendary',
+				'color': 'dark_gray'
+			},
+			'shadow': {
+				'rarity': 'uncommon',
+				'color': 'dark_gray'
+			},
+			'battle_bond': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'hero_style': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'night_slash': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 2,
+					'cooldown_group': 'greninja/shadow_sneak',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.greninja.night_slash',
+					'color': 'dark_gray'
+				}
+			},
+			'water_shuriken': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'greninja/water_shuriken',
+					'cooldown': 0.25,
+					'max_stack_size': 4
+				},
+				'default': {
+					'name': 'ssbrc.fighter.greninja.water_shuriken',
+					'color': 'blue'
+				}
+			}
+		}
+	},
+	'team_rocket': {
+		'series': 'pokemon',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_purple',
+		'alignment': 'villain',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'alternate_world': {
+				'rarity': 'rare',
+				'color': 'dark_aqua'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'james',
+			'jesse',
+			'arbok',
+			'meowth',
+			'wobbuffet'
+		],
+		'items': {
+			'scratch': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 3,
+					'attack_speed': 3.5,
+					'cooldown_group': 'team_rocket/scratch',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.scratch',
+					'color': 'white'
+				}
+			},
+			'payday': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'team_rocket/payday',
+					'cooldown': 10
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.payday',
+					'color': 'white'
+				}
+			},
+			'poison_jab': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 3,
+					'attack_speed': 2.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.poison_jab',
+					'color': 'dark_gray'
+				}
+			},
+			'acid': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'team_rocket/acid',
+					'cooldown': 8
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.acid',
+					'color': 'light_purple'
+				}
+			},
+			'weezing': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'team_rocket/weezing',
+					'cooldown': 0.25
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.weezing',
+					'color': 'light_purple'
+				}
+			},
+			'counter': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 0.35,
+					'attack_speed': 2.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.counter',
+					'color': 'dark_gray'
+				}
+			},
+			'destiny_bond': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'team_rocket/destiny_bond',
+					'cooldown': 30
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.destiny_bond',
+					'color': 'dark_gray'
+				}
+			},
+			'splash': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'team_rocket/splash',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.team_rocket.splash',
+					'color': 'white'
+				}
+			}
+		}
+	},
+	'ness': {
+		'series': 'earthbound',
+		'stats': {
+			'armor': 'low',
+			'double_jump_strength': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_purple',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'moonside': {
+				'rarity': 'uncommon',
+				'color': 'aqua'
+			},
+			'pajamas': {
+				'rarity': 'uncommon',
+				'color': 'dark_aqua'
+			},
+			'phase_distortion': {
+				'rarity': 'uncommon',
+				'color': 'gray'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'mr_baseball_bat': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ness.mr_baseball_bat',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'pk_fire': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'ness/pk_fire',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ness.pk_fire',
+					'color': 'red'
+				}
+			},
+			'pk_flash': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'ness/pk_flash',
+					'cooldown': 5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ness.pk_flash',
+					'color': 'green'
+				}
+			}
+		}
+	},
+	'giegue': {
+		'series': 'earthbound',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'light_purple',
+		'alignment': 'villain',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'moonside': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'manga': {
+				'rarity': 'legendary',
+				'color': 'light_purple'
+			},
+			'niiue': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'devastation_strike': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.giegue.devastation_strike',
+					'color': 'dark_gray'
+				}
+			},
+			'pk_freeze': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'giegue/pk_freeze',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.giegue.pk_freeze',
+					'color': 'aqua'
+				}
+			},
+			'pk_beam': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'giegue/pk_beam',
+					'cooldown': 5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.giegue.pk_beam',
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'captain_falcon': {
+		'series': 'f_zero',
+		'stats': {
+			'armor': 'medium',
+			'jump_strength': 'low',
+			'double_jump_strength': 'high',
+			'movement_speed': 0.15,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'red',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'blood_falcon': {
+				'rarity': 'rare',
+				'color': 'dark_red'
+			},
+			'super_falcon': {
+				'rarity': 'uncommon',
+				'color': 'gray'
+			},
+			'rick_wheeler': {
+				'rarity': 'rare',
+				'color': 'dark_blue'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'fists_of_fury': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 2.5,
+					'cooldown_group': 'captain_falcon/fists_of_fury',
+					'cooldown': 1.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.captain_falcon.fists_of_fury',
+					'color': 'red'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'blood_falcon': {
+					'color': 'dark_red'
+				}
+			},
+			'falcon_punch': {
+				'type': 'custom_hybrid',
+				'stats': {
+					'attack_damage': 20,
+					'attack_speed': 0.5,
+					'max_reach': 0,
+					'hitbox_margin': 1,
+					'cooldown_group': 'captain_falcon/falcon_punch',
+					'cooldown': 10
+				},
+				'default': {
+					'name': 'ssbrc.fighter.captain_falcon.falcon_punch',
+					'color': 'red'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'falcon_charge': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'captain_falcon/falcon_charge',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.captain_falcon.falcon_charge.default',
+					'color': 'red'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'blood_falcon': {
+					'name': 'ssbrc.fighter.captain_falcon.falcon_charge.blood_falcon'
+				}
+			}
+		}
+	},
+	'ice_climbers': {
+		'series': 'ice_climbers',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'aqua',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'frosted': {
+				'rarity': 'uncommon',
+				'color': 'aqua'
+			},
+			'polar_parka': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'tundra_climbers': {
+				'rarity': 'uncommon',
+				'color': 'gold'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'popo',
+			'nana'
+		],
+		'items': {
+			'hammer': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 1.5,
+					'cooldown_group': 'ice_climbers/hammer',
+					'cooldown': 1.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ice_climbers.hammer',
+					'color': 'gold'
+				}
+			},
+			'snowstorm': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'ice_climbers/snowstorm',
+					'cooldown': 0.15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ice_climbers.snowstorm',
+					'color': 'aqua'
+				}
+			},
+			'windstorm': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'ice_climbers/windstorm',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ice_climbers.windstorm',
+					'color': 'green'
+				}
+			}
+		}
+	},
+	'roy': {
+		'series': 'fire_emblem',
+		'stats': {
+			'armor': 'low',
+			'max_health': 48,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'red',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'young_lion': {
+				'rarity': 'rare',
+				'color': 'red'
+			},
+			'awakening': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'blazing_bachelor': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'roy_sword': {
+				'type': 'hybrid_shield',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 1.5,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break',
+					'percent_blocked_damage': 0.3,
+				},
+				'default': {
+					'name': 'ssbrc.fighter.roy.sword.default',
+					'color': 'gold'
+				},
+				'young_lion': {
+					'name': 'ssbrc.fighter.zelda.weapon.rapier.default',
+					'color': 'blue'
+				},
+				'awakening': {
+					'name': 'ssbrc.fighter.roy.sword.awakening',
+					'color': 'blue'
+				},
+				'blazing_bachelor': {
+					'name': 'ssbrc.fighter.roy.sword.blazing_bachelor',
+					'color': 'white'
+				}
+			}
+
+		}
+	},
+	'byleth': {
+		'series': 'fire_emblem',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_aqua',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'awakened': {
+				'rarity': 'common',
+				'color': '#C7D6AF'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'female',
+			'male'
+		],
+		'items': {
+			'areadbhar': {
+				'type': 'spear',
+				'group': 'byleth_relic',
+				'stats': {
+					'max_damage': 30,
+					'can_sprint': true,
+					'speed_multiplier': 1,
+					'attack_damage': 4,
+					'attack_speed': 1,
+					'max_reach': 3.5,
+					'item_damage_on_attack': 1,
+					'swing_animation': 'stab',
+					'startup_ticks': 10,
+					'cooldown_ticks': 20
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.areadbhar',
+					'color': 'red'
+				}
+			},
+			'aymr': {
+				'type': 'hybrid',
+				'group': 'byleth_relic',
+				'stats': {
+					'max_damage': 20,
+					'speed_multiplier': 0,
+					'attack_damage': 9,
+					'attack_speed': 0.5,
+					'max_reach': 2.8,
+					'item_damage_on_attack': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.aymr',
+					'color': 'red'
+				}
+			},
+			'brave_bow': {
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.8
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.brave_bow',
+					'color': 'yellow'
+				}
+			},
+			'divine_pulse': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'byleth/divine_pulse',
+					'cooldown': 120
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.divine_pulse',
+					'color': 'light_purple'
+				}
+			},
+			'failnaught': {
+				'type': 'bow',
+				'group': 'byleth_relic',
+				'stats': {
+					'max_damage': 15,
+					'speed_multiplier': 0.6
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.failnaught',
+					'color': 'yellow'
+				}
+			},
+			'steed_charge': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'byleth/steed_charge',
+					'cooldown': 15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.steed_charge',
+					'color': 'blue'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'steel_shield': {
+				'type': 'shield',
+				'stats': {
+					'max_damage': 20,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.steel_shield',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'sword_of_the_creator': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 1,
+					'max_reach': 3.25,
+					'hitbox_margin': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.byleth.sword_of_the_creator',
+					'color': 'yellow'
+				}
+			}
+		}
+	},
+	'pit': {
+		'series': 'kid_icarus',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'white',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'retro': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'revived': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'body',
+		'forms': [
+			'wings',
+			'default'
+		],
+		'items': {
+			'palutena_bow': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 1.5,
+					'damage': {
+						'type': 'generic',
+						'amount': 14
+					}
+				},
+				'default': {
+					'name': 'ssbrc.fighter.pit.palutena_bow',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'retro': {
+					'color': 'yellow'
+				}
+			}
+		}
+	},
+	'snake': {
+		'series': 'metal_gear',
+		'stats': {
+			'armor': 'low',
+			'movement_speed': 0.05,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'gray',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'classic_tuxedo': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'iroquois_pliskin': {
+				'rarity': 'uncommon',
+				'color': 'dark_green'
+			},
+			'old_snake': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'head',
+		'forms': [
+			'default',
+			'night_vision_goggles'
+		],
+		'items': {
+			'cardboard_box': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'snake/cardboard_box',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.series.metal_gear.cardboard_box',
+					'color': 'yellow'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'claymore': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'snake/claymore',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.claymore',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'cqc_knife': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.cqc_knife',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'famas': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'snake/famas',
+					'cooldown': 0.2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.famas',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'm870_custom': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'snake/m870_custom',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.m870_custom',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'psg1': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'snake/psg1',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.psg1',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'smoke_grenade': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'snake/smoke_grenade',
+					'cooldown': 15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.smoke_grenade',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'socom': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'snake/socom',
+					'cooldown': 0.25
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.socom',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'raiden': {
+		'series': 'metal_gear',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'gray',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'cyborg_body': {
+				'rarity': 'rare',
+				'color': 'gray'
+			},
+			'maverick_body': {
+				'rarity': 'rare',
+				'color': 'dark_gray'
+			},
+			'business_suit': {
+				'rarity': 'rare',
+				'color': 'white'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'aks_74u': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'raiden/aks_74u',
+					'cooldown': 0.15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.raiden.aks_74u',
+					'color': 'green'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'c4': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'raiden/c4',
+					'cooldown': 0.6
+				},
+				'default': {
+					'name': 'ssbrc.fighter.raiden.c4',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'cardboard_box': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'raiden/cardboard_box',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.series.metal_gear.cardboard_box',
+					'color': 'yellow'
+				}
+			},
+			'high_frequency_blade': {
+				'type': 'hybrid_shield',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 2.5,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.raiden.high_frequency_blade',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'smoke_grenade': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'raiden/smoke_grenade',
+					'cooldown': 15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.snake.smoke_grenade',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'throwing_knives': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'raiden/throwing_knives',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.raiden.throwing_knives',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'sonic': {
+		'series': 'sonic_the_hedgehog',
+		'stats': {
+			'armor': 'low',
+			'movement_speed': 0.1,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'blue',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'classic': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'werehog': {
+				'rarity': 'rare',
+				'color': 'dark_blue'
+			},
+			'hylian_tunic': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'sonic_punch': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 1,
+					'attack_speed': 5,
+					'max_reach': 2.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.sonic.sonic_punch',
+					'color': 'blue'
+				}
+			}
+		}
+	},
+	'shadow': {
+		'series': 'sonic_the_hedgehog',
+		'stats': {
+			'armor': 'low',
+			'movement_speed': 0.05,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_red',
+		'alignment': 'neutral',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'yellow_android': {
+				'rarity': 'uncommon',
+				'color': 'yellow'
+			},
+			'sir_lancelot': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'dark_knight': {
+				'rarity': 'legendary',
+				'color': 'dark_gray'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'shadow_sword': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 1,
+					'attack_speed': 4,
+					'max_reach': 2.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shadow.sword.default',
+					'color': 'dark_gray'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'sir_lancelot': {
+					'name': 'ssbrc.fighter.shadow.sword.sir_lancelot',
+					'color': 'gray'
+				}
+			},
+			'chaos_control': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shadow/chaos_control',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shadow.chaos_control',
+					'color': 'blue'
+				}
+			},
+			'chaos_spear': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shadow/chaos_spear',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shadow.chaos_spear',
+					'color': 'yellow'
+				}
+			}
+		}
+	},
+	'rob': {
+		'series': 'nes_robot',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'white',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'famicom': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'ancient_minister': {
+				'rarity': 'rare',
+				'color': 'dark_green',
+				'forms_isolated_to': 'body'
+			},
+			'rob_blaster': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'head',
+		'forms': [
+			'default',
+			'ready',
+			'charged'
+		],
+		'items': {
+			'robo_rotor': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.rob.robo_rotor',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'robo_beam': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'rob/robo_beam',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.rob.robo_beam',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'villager': {
+		'series': 'animal_crossing',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'red',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'retro': {
+				'rarity': 'uncommon',
+				'color': 'gold'
+			},
+			'new_leaf': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			},
+			'mario_kart': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'male',
+			'female'
+		],
+		'items': {
+			'bank': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'villager/bank',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.villager.bank',
+					'color': 'yellow'
+				}
+			},
+			'sapling': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'villager/sapling',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.villager.watering_can',
+					'color': 'gray'
+				}
+			},
+			'slingshot': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'villager/watering_can',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.villager.watering_can',
+					'color': 'gray'
+				}
+			},
+			'timmy': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'villager/timmy',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.villager.timmy',
+					'color': 'gold'
+				}
+			},
+			'villager_axe': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.villager.axe',
+					'color': 'red'
+				},
+				'gold': {
+					'color': 'light_purple'
+				}
+			},
+			'watering_can': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'villager/watering_can',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.villager.watering_can',
+					'color': 'gray'
+				}
+			}
+		}
+	},
+	'mega_man': {
+		'series': 'mega_man',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'blue',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'x': {
+				'rarity': 'rare',
+				'color': 'dark_aqua'
+			},'star_force': {
+				'rarity': 'legendary',
+				'color': 'green'
+			},
+			'bad_box_art': {
+				'rarity': 'rare',
+				'color': 'yellow'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'mega_buster',
+			'air_shooter',
+			'beat_call',
+			'drill_bomb',
+			'flame_sword',
+			'hyper_bomb',
+			'junk_shield',
+			'metal_blade',
+			'pile_driver',
+			'remote_mine'
+		],
+		'items': {
+			'air_shooter': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/air_shooter',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.air_shooter',
+					'color': 'dark_aqua'
+				}
+			},
+			'beat_call': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/beat_call',
+					'cooldown': 0.25
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.beat_call',
+					'color': 'red'
+				}
+			},
+			'drill_bomb': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/drill_bomb',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.drill_bomb',
+					'color': 'red'
+				}
+			},
+			'flame_sword': {
+				'group': 'mega_buster',
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 1.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.flame_sword',
+					'color': 'red'
+				}
+			},
+			'hyper_bomb': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/hyper_bomb',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.hyper_bomb',
+					'color': '#30993A'
+				}
+			},
+			'junk_shield': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/junk_shield',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.junk_shield',
+					'color': 'gray'
+				}
+			},
+			'mega_buster': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/mega_buster',
+					'cooldown': 0.2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.mega_buster',
+					'color': 'blue'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'star_force': {
+					'color': 'green'
+				}
+			},
+			'metal_blade': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/metal_blade',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.metal_blade',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'pile_driver': {
+				'group': 'mega_buster',
+				'type': 'custom_swing',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 0.5,
+					'max_reach': 1.5,
+					'swing_animation': 'stab',
+					'use_sound': 'fighter.mega_man.pile_driver'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.pile_driver.default',
+					'color': '#E6771E'
+				},
+				'star_force': {
+					'name': 'ssbrc.fighter.mega_man.pile_driver.star_force'
+				}
+			},
+			'remote_mine': {
+				'group': 'mega_buster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'mega_man/remote_mine',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.mega_man.remote_mine',
+					'color': '#E861A1'
+				}
+			}
+		}
+	},
+	'ryu': {
+		'series': 'street_fighter',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'white',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'super_turbo': {
+				'rarity': 'uncommon',
+				'color': 'dark_gray'
+			},
+			'hot_ryu': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'iron_fist': {
+				'rarity': 'rare',
+				'color': 'white'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'default',
+			'evil'
+		],
+		'items': {
+			'collarbone_breaker': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 2,
+					'cooldown_group': 'ryu/hadouken',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.ryu.collarbone_breaker',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'cloud': {
+		'series': 'final_fantasy',
+		'stats': {
+			'armor': 'low',
+			'max_health': 32,
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'white',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'midgar_infantry': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'ocean_chocobo': {
+				'rarity': 'uncommon',
+				'color': 'aqua',
+				'collection': 'summer'
+			},
+			'sky_soarer': {
+				'rarity': 'rare',
+				'color': 'aqua'
+			}
+		},
+		'forms': [
+			'default',
+			'punisher'
+		],
+		'items': {
+			'buster_sword': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 1,
+					'cooldown_group': 'cloud/buster_sword',
+					'cooldown': 1.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.cloud.buster_sword',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'alucard': {
+		'series': 'castlevania',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'gray',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'judgement': {
+				'rarity': 'rare',
+				'color': 'blue'
+			},
+			'lords_of_shadow': {
+				'rarity': 'rare',
+				'color': 'dark_gray'
+			},
+			'moonlight_rhapsody': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'head',
+		'forms': [
+			'default',
+			'blood_metamorphosis'
+		],
+		'items': {
+			'alucard_shield': {
+				'type': 'shield',
+				'stats': {
+					'max_damage': 20,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.alucard.alucard_shield',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'alucard_sword': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 2.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.alucard.sword.default',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'lords_of_shadow': {
+					'name': 'ssbrc.fighter.alucard.sword.lords_of_shadow',
+					'color': 'dark_gray'
+				}
+			},
+			'blood_metamorphosis': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'alucard/blood_metamorphosis',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.alucard.blood_metamorphosis',
+					'color': 'dark_red'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'holy_water': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'alucard/holy_water',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.alucard.holy_water',
+					'color': 'blue'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'joker': {
+		'series': 'persona',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_red',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': true,
+		'skins': {
+			'shujin_academy': {
+				'rarity': 'uncommon',
+				'color': 'dark_red'
+			},
+			'prisoner_of_fate': {
+				'rarity': 'uncommon',
+				'color': 'white'
+			},
+			'christmas_outfit': {
+				'rarity': 'uncommon',
+				'color': 'red',
+				'collection': 'winter'
+			}
+		},
+		'true_forms': true,
+		'forms_isolated_to': 'head',
+		'forms': [
+			'default',
+			'awakening'
+		],
+		'items': {
+			'amrita_shower': {
+				'type': 'ability',
+				'group': 'persona_awakening',
+				'stats': {
+					'cooldown_group': 'joker/amrita_shower',
+					'cooldown': 5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.amrita_shower',
+					'color': 'green'
+				}
+			},
+			'eiagon': {
+				'type': 'ability',
+				'group': 'persona_awakening',
+				'stats': {
+					'cooldown_group': 'joker/eiagon',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.eiagon',
+					'color': 'dark_red'
+				}
+			},
+			'hama': {
+				'type': 'ability',
+				'group': 'persona_awakening',
+				'stats': {
+					'cooldown_group': 'joker/hama',
+					'cooldown': 15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.hama',
+					'color': 'yellow'
+				}
+			},
+			'phantom_show': {
+				'type': 'ability',
+				'group': 'persona_awakening',
+				'stats': {
+					'cooldown_group': 'joker/phantom_show',
+					'cooldown': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.phantom_show',
+					'color': 'yellow'
+				}
+			},
+			'rebel_knife': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.rebel_knife',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'rebel_knife_fire': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.rebel_knife.fire_boost',
+					'color': 'red'
+				}
+			},
+			'rebel_knife_freeze': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.rebel_knife.freeze_boost',
+					'color': 'aqua'
+				}
+			},
+			'tt33': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'joker/tt33',
+					'cooldown': 0.2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.joker.tt33',
+					'color': 'gray'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'hero': {
+		'series': 'dragon_quest',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'yellow',
+		'alignment': 'hero',
+		'miiverse_posts': 2,
+		'default': true,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'erdrick': {
+				'rarity': 'uncommon',
+				'color': 'gray'
+			},
+			'solo': {
+				'rarity': 'rare',
+				'color': 'green'
+			},
+			'sofia': {
+				'rarity': 'rare',
+				'color': 'green'
+			},
+			'rek': {
+				'rarity': 'rare',
+				'color': 'blue'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'default',
+			'kaclang'
+		],
+		'items': {
+			'hero_sword': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 1.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.sword.default',
+					'color': 'yellow'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'rek': {
+					'name': 'ssbrc.fighter.hero.sword.rek'
+				},
+				'solo': {
+					'name': 'ssbrc.fighter.hero.sword.solo'
+				},
+				'sofia': {
+					'name': 'ssbrc.fighter.hero.sword.solo'
+				}
+			},
+			'hero_shield': {
+				'type': 'shield',
+				'stats': {
+					'max_damage': 30,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.shield.default',
+					'color': 'yellow'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'erdrick': {
+					'name': 'ssbrc.fighter.hero.shield.erdrick'
+				},
+				'rek': {
+					'name': 'ssbrc.fighter.hero.shield.rek'
+				},
+				'solo': {
+					'inherit': 'rek'
+				},
+				'sofia': {
+					'inherit': 'rek'
+				}
+			},
+			'accelerate': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 13
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.accelerate',
+					'color': 'green'
+				}
+			},
+			'acceleratle': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 20
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.acceleratle',
+					'color': 'green'
+				}
+			},
+			'bang': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 9
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.bang',
+					'color': 'gold'
+				}
+			},
+			'flame_slash': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 12
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.flame_slash',
+					'color': 'red'
+				}
+			},
+			'frizz': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 6
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.frizz',
+					'color': 'red'
+				}
+			},
+			'frizzle': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 16
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.frizzle',
+					'color': 'red'
+				}
+			},
+			'heal': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 7
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.heal',
+					'color': 'green'
+				}
+			},
+			'hocus_pocus': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 4
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.hocus_pocus',
+					'color': 'light_purple'
+				}
+			},
+			'kaboom': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 37
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.kaboom',
+					'color': 'gold'
+				}
+			},
+			'kaclang': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 6
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.kaclang',
+					'color': 'gray'
+				}
+			},
+			'kacrackle_slash': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 11
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.kacrackle_slash',
+					'color': 'aqua'
+				}
+			},
+			'kafrizz': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 36
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.kafrizz',
+					'color': 'red'
+				}
+			},
+			'kamikazee': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.kamikazee',
+					'color': 'gold'
+				}
+			},
+			'kaswoosh': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 18
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.kaswoosh',
+					'color': 'green'
+				}
+			},
+			'kazap': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 42
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.kazap',
+					'color': 'yellow'
+				}
+			},
+			'magic_burst': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 10
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.magic_burst',
+					'color': 'light_purple'
+				}
+			},
+			'metal_slash': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 6
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.metal_slash',
+					'color': 'gray'
+				}
+			},
+			'multiheal': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 14
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.multiheal',
+					'color': 'green'
+				}
+			},
+			'oomph': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 16
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.oomph',
+					'color': 'red'
+				}
+			},
+			'snooze': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 16
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.snooze',
+					'color': 'light_purple'
+				}
+			},
+			'swoosh': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 9
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.swoosh',
+					'color': 'green'
+				}
+			},
+			'thwack': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 30
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.thwack',
+					'color': 'dark_purple'
+				}
+			},
+			'whack': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 10
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.whack',
+					'color': 'dark_purple'
+				}
+			},
+			'woosh': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.woosh',
+					'color': 'green'
+				}
+			},
+			'zap': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 8
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.zap',
+					'color': 'yellow'
+				}
+			},
+			'zapple': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 18
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.zapple',
+					'color': 'yellow'
+				}
+			},
+			'zoom': {
+				'type': 'cost_ability',
+				'group': 'hero.spell',
+				'stats': {
+					'cooldown_group': 'hero/spell',
+					'cooldown': 1.5,
+					'cost': 8
+				},
+				'default': {
+					'name': 'ssbrc.fighter.hero.zoom',
+					'color': 'blue'
+				}
+			}
+		}
+	},
+	'steve': {
+		'series': 'minecraft',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_aqua',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'gold': {
+				'inherit': 'head'
+			},
+			'herobrine': {
+				'rarity': 'common',
+				'color': 'white',
+				'forms_isolated_to': 'head'
+			},
+			'alex': {
+				'rarity': 'uncommon',
+				'color': 'yellow'
+			},
+			'ari': {
+				'rarity': 'uncommon',
+				'color': 'yellow'
+			},
+			'efe': {
+				'rarity': 'uncommon',
+				'color': 'light_purple'
+			},
+			'kai': {
+				'rarity': 'uncommon',
+				'color': 'dark_purple'
+			},
+			'makena': {
+				'rarity': 'uncommon',
+				'color': 'gold'
+			},
+			'noor': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'sunny': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'zuri': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'wooden_sword': {
+				'group': 'steve_equipment',
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 5.5,
+					'attack_speed': 1.5
+				},
+				'default': {
+					'name': 'item.minecraft.wooden_sword',
+					'color': 'dark_gray'
+				}
+			},
+			'wooden_pickaxe': {
+				'group': 'steve_pickaxe',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.8,
+				},
+				'default': {
+					'name': 'item.minecraft.wooden_pickaxe',
+					'color': 'dark_gray'
+				}
+			},
+			'stone_sword': {
+				'group': 'steve_equipment',
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 1.5
+				},
+				'default': {
+					'name': 'item.minecraft.stone_sword',
+					'color': 'gray'
+				}
+			},
+			'stone_pickaxe': {
+				'group': 'steve_pickaxe',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.8,
+				},
+				'default': {
+					'name': 'item.minecraft.stone_pickaxe',
+					'color': 'gray'
+				}
+			},
+			'golden_sword': {
+				'group': 'steve_equipment',
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 2
+				},
+				'default': {
+					'name': 'item.minecraft.golden_sword',
+					'color': 'gold'
+				}
+			},
+			'golden_pickaxe': {
+				'group': 'steve_pickaxe',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.8,
+				},
+				'default': {
+					'name': 'item.minecraft.golden_pickaxe',
+					'color': 'gold'
+				}
+			},
+			'iron_sword': {
+				'group': 'steve_equipment',
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6.5,
+					'attack_speed': 1.5
+				},
+				'default': {
+					'name': 'item.minecraft.iron_sword',
+					'color': 'white'
+				}
+			},
+			'iron_pickaxe': {
+				'group': 'steve_pickaxe',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.8,
+				},
+				'default': {
+					'name': 'item.minecraft.iron_pickaxe',
+					'color': 'white'
+				}
+			},
+			'diamond_sword': {
+				'group': 'steve_equipment',
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 1.5
+				},
+				'default': {
+					'name': 'item.minecraft.diamond_sword',
+					'color': 'aqua'
+				}
+			},
+			'diamond_pickaxe': {
+				'group': 'steve_pickaxe',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.8,
+				},
+				'default': {
+					'name': 'item.minecraft.diamond_pickaxe',
+					'color': 'aqua'
+				}
+			},
+			'netherite_axe': {
+				'group': 'steve_equipment',
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 7.5,
+					'attack_speed': 0.75
+				},
+				'default': {
+					'name': 'item.minecraft.netherite_axe',
+					'color': 'dark_red'
+				}
+			},
+			'netherite_pickaxe': {
+				'group': 'steve_pickaxe',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.8,
+				},
+				'default': {
+					'name': 'item.minecraft.netherite_pickaxe',
+					'color': 'dark_red'
+				}
+			},
+			'shield': {
+				'type': 'shield',
+				'stats': {
+					'max_damage': 10,
+					'block_sound': 'minecraft:item.shield.block',
+					'disabled_sound': 'minecraft:item.shield.break'
+				},
+				'default': {
+					'name': 'item.minecraft.shield',
+					'color': 'white'
+				}
+			}
+		}
+	},
+	'sora': {
+		'series': 'kingdom_hearts',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'white',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'timeless_river': {
+				'rarity': 'uncommon',
+				'color': 'gray'
+			},
+			'space_paranoids': {
+				'rarity': 'uncommon',
+				'color': 'aqua'
+			},
+			'birth_by_sleep': {
+				'rarity': 'legendary',
+				'color': 'aqua'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'default',
+			'anti',
+			'valor',
+			'wisdom',
+			'master'
+		],
+		'items': {
+			'keyblade': {
+				'type': 'hybrid',
+				'group': 'keyblade',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 1.5,
+					'cooldown_group': 'sora/keyblade',
+					'cooldown': 0.2
+				},
+				'default': {
+					'name': 'null',
+					'color': 'yellow'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'timeless_river': {
+					'color': 'gray'
+				},
+				'space_paranoids': {
+					'color': 'aqua'
+				},
+				'birth_by_sleep': {
+					'color': 'dark_gray'
+				}
+			},
+			'wisdom_keyblade': {
+				'type': 'custom_hybrid',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 1.5,
+					'max_reach': 0,
+					'swing_animation': 'none',
+					'cooldown_group': 'sora/keyblade',
+					'cooldown': 0.2
+				},
+				'inherit': 'keyblade',
+			},
+			'valor_form': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'sora/form_card',
+					'cooldown': 0.05
+				},
+				'default': {
+					'name': 'ssbrc.fighter.sora.valor_form',
+					'color': 'red'
+				}
+			},
+			'wisdom_form': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'sora/form_card',
+					'cooldown': 0.05
+				},
+				'default': {
+					'name': 'ssbrc.fighter.sora.wisdom_form',
+					'color': 'blue'
+				}
+			},
+			'master_form': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'sora/form_card',
+					'cooldown': 0.05
+				},
+				'default': {
+					'name': 'ssbrc.fighter.sora.master_form',
+					'color': 'yellow'
+				}
+			}
+		}
+	},
+	'shovel_knight': {
+		'series': 'shovel_knight',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'dark_aqua',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'conjurers_coat': {
+				'rarity': 'uncommon',
+				'color': 'dark_purple'
+			},
+			'armor_of_chaos': {
+				'rarity': 'uncommon',
+				'color': 'red'
+			},
+			'toad_gear': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'default',
+			'phase_locket'
+		],
+		'items': {
+			'shovel_blade': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 1.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shovel_knight.shovel_blade',
+					'color': 'dark_aqua'
+				},
+				'gold': {
+					'color': 'gold'
+				},
+				'armor_of_chaos': {
+					'color': 'red'
+				},
+				'toad_gear': {
+					'color': 'green'
+				}
+			},
+			'chaos_sphere': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shovel_knight/chaos_sphere',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shovel_knight.chaos_sphere',
+					'color': 'green'
+				}
+			},
+			'flare_wand': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shovel_knight/flare_wand',
+					'cooldown': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shovel_knight.flare_wand',
+					'color': 'green'
+				}
+			},
+			'phase_locket': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shovel_knight/phase_locket',
+					'cooldown': 15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shovel_knight.phase_locket',
+					'color': 'green'
+				}
+			},
+			'propeller_dagger': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shovel_knight/propeller_dagger',
+					'cooldown': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shovel_knight.propeller_dagger',
+					'color': 'green'
+				}
+			},
+			'throwing_anchor': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shovel_knight/throwing_anchor',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shovel_knight.throwing_anchor',
+					'color': 'green'
+				}
+			},
+			'war_horn': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'shovel_knight/war_horn',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.shovel_knight.war_horn',
+					'color': 'green'
+				}
+			}
+		}
+	},
+	'altered_beast': {
+		'series': 'altered_beast',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'gold',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'player_2': {
+				'rarity': 'uncommon',
+				'color': 'blue'
+			},
+			'luke_custer': {
+				'rarity': 'legendary',
+				'color': 'light_purple'
+			},
+			'lost_warrior': {
+				'rarity': 'uncommon',
+				'color': 'dark_green'
+			}
+		},
+		'true_forms': true,
+		'forms': [
+			'centurion',
+			'shirtless',
+			'werebear',
+			'weredragon',
+			'weretiger',
+			'werewolf',
+		],
+		'items': {
+			'bear_claw': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 8,
+					'attack_speed': 0.5,
+					'disable_blocking_for_seconds': 5.0
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.bear_claw',
+					'color': 'gold'
+				}
+			},
+			'dragon_claw': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.dragon_claw',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'electrocution': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'altered_beast/electrocution',
+					'cooldown': 15
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.electrocution',
+					'color': 'yellow'
+				}
+			},
+			'flame_hands': {
+				'type': 'hybrid',
+				'stats': {
+					'attack_damage': 5,
+					'attack_speed': 2,
+					'cooldown_group': 'altered_beast/flame_hands',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.flame_hands',
+					'color': 'red'
+				}
+			},
+			'gladius': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 6,
+					'attack_speed': 1,
+					'disable_blocking_for_seconds': 5.0
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.gladius',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'petrifying_breath': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'altered_beast/petrifying_breath',
+					'cooldown': 5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.petrifying_breath',
+					'color': 'white'
+				}
+			},
+			'sabretooth': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'altered_beast/sabretooth',
+					'cooldown': 3
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.sabretooth',
+					'color': 'yellow'
+				}
+			},
+			'spirit_orb': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'altered_beast/spirit_orb',
+					'cooldown': 2
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.spirit_orb',
+					'color': 'red'
+				}
+			},
+			'tiger_claw': {
+				'type': 'custom_swing',
+				'stats': {
+					'attack_damage': 7,
+					'attack_speed': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.altered_beast.tiger_claw',
+					'color': 'gold'
+				}
+			}
+		}
+	},
+	'yar': {
+		'series': 'yars_revenge',
+		'stats': {
+			'armor': 'low',
+			'safe_fall_distance': 'medium',
+			'weight': 'medium'
+		},
+		'color': 'red',
+		'alignment': 'hero',
+		'miiverse_posts': 1,
+		'default': false,
+		'skins': {
+			'player_2': {
+				'rarity': 'uncommon',
+				'color': 'green'
+			},
+			'recruit': {
+				'rarity': 'uncommon',
+				'color': 'dark_green'
+			},
+			'emi': {
+				'rarity': 'uncommon',
+				'color': 'gold'
+			}
+		},
+		'forms': [
+			'default'
+		],
+		'items': {
+			'drone': {
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/drone',
+					'cooldown': 0.25
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.drone',
+					'color': 'yellow'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'gatling_gun': {
+				'group': 'ray_blaster',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.gatling_gun',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'gatling_gun_power': {
+				'group': 'power_up',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/power_up',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.gatling_gun',
+					'color': 'gold'
+				}
+			},
+			'missile_launcher': {
+				'group': 'ray_blaster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/missile_launcher',
+					'cooldown': 5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.missile_launcher',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'missile_launcher_power': {
+				'group': 'power_up',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/power_up',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.missile_launcher',
+					'color': 'gold'
+				}
+			},
+			'omnishot_power': {
+				'group': 'power_up',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/power_up',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.omnishot',
+					'color': 'gold'
+				}
+			},
+			'railgun': {
+				'group': 'ray_blaster',
+				'type': 'bow',
+				'stats': {
+					'speed_multiplier': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.railgun',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'railgun_power': {
+				'group': 'power_up',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/power_up',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.railgun',
+					'color': 'gold'
+				}
+			},
+			'ray_blaster': {
+				'group': 'ray_blaster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/ray_blaster',
+					'cooldown': 0.75
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.ray_blaster',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'trionic_blade': {
+				'type': 'weapon',
+				'stats': {
+					'attack_damage': 4,
+					'attack_speed': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.trionic_blade',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'triple_shot': {
+				'group': 'ray_blaster',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/ray_blaster',
+					'cooldown': 0.5
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.triple_shot',
+					'color': 'white'
+				},
+				'gold': {
+					'color': 'gold'
+				}
+			},
+			'triple_shot_power': {
+				'group': 'power_up',
+				'type': 'ability',
+				'stats': {
+					'cooldown_group': 'yar/power_up',
+					'cooldown': 1
+				},
+				'default': {
+					'name': 'ssbrc.fighter.yar.triple_shot',
+					'color': 'gold'
+				}
+			}
+		}
+	}
+}

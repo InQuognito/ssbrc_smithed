@@ -1,0 +1,1 @@
+{"parent":"ssbrc:use_item/root","criteria":{"requirement":{"trigger":"minecraft:using_item","conditions":{"item":{"items":"#ssbrc:equipment","predicates":{"minecraft:custom_data":"{item:\"wisdom_form\"}"}}}}},"rewards":{"function":"ssbrc:game/fighter/sora/logic/drive_forms/wisdom"}}

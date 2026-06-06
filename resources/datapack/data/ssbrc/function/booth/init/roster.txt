@@ -1,0 +1,53 @@
+summon minecraft:text_display ~24.49 ~4 ~16 {Tags: ["ssbrc","summit.booth_decoration"], Rotation: [90f,0f], text: "Roster", brightness: {sky: 15, block: 15}, transformation: [3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:item_display ~24.49 ~0.5 ~16 {Tags: ["ssbrc","summit.booth_decoration"], Rotation: [90f,0f], item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878460}},brightness:{sky:15,block:15},transformation:[3.5f,0f,0f,0f,0f,3.5f,0f,0f,0f,0f,3.5f,0f,0f,0f,0f,1f]}
+summon minecraft:text_display ~24.49 ~3.6 ~18.75 {Tags: ["ssbrc","summit.booth_decoration"], Rotation: [90f,0f], text:'{"text":"Click me!","color":"yellow"}',brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,-0.3f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f],translation:[0f,0f,0f]},background:0}
+
+summon minecraft:interaction ~24.78 ~2.81 ~13.23 {Tags: ["ssbrc","ssbrc.roster.mario"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~13.85 {Tags: ["ssbrc","ssbrc.roster.luigi"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~14.46 {Tags: ["ssbrc","ssbrc.roster.bowser"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~158 {Tags: ["ssbrc","ssbrc.roster.donkey_kong"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~15.69 {Tags: ["ssbrc","ssbrc.roster.king_k_rool"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~16.31 {Tags: ["ssbrc","ssbrc.roster.link"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~16.92 {Tags: ["ssbrc","ssbrc.roster.zelda"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~17.54 {Tags: ["ssbrc","ssbrc.roster.ganondorf"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~18.16 {Tags: ["ssbrc","ssbrc.roster.samus"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.81 ~18.77 {Tags: ["ssbrc","ssbrc.roster.dark_samus"], height: .58, width: .58}
+
+summon minecraft:interaction ~24.78 ~2.20 ~13.23 {Tags: ["ssbrc","ssbrc.roster.kirby"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~13.85 {Tags: ["ssbrc","ssbrc.roster.fox"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~14.46 {Tags: ["ssbrc","ssbrc.roster.wolf"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~158 {Tags: ["ssbrc","ssbrc.roster.pikachu"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~15.69 {Tags: ["ssbrc","ssbrc.roster.jigglypuff"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~16.31 {Tags: ["ssbrc","ssbrc.roster.pokemon_trainer"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~16.92 {Tags: ["ssbrc","ssbrc.roster.greninja"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~17.54 {Tags: ["ssbrc","ssbrc.roster.team_rocket"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~18.16 {Tags: ["ssbrc","ssbrc.roster.ness"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~2.20 ~18.77 {Tags: ["ssbrc","ssbrc.roster.giegue"], height: .58, width: .58}
+
+summon minecraft:interaction ~24.78 ~1.58 ~13.23 {Tags: ["ssbrc","ssbrc.roster.captain_falcon"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~13.85 {Tags: ["ssbrc","ssbrc.roster.byleth"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~14.46 {Tags: ["ssbrc","ssbrc.roster.pit"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~158 {Tags: ["ssbrc","ssbrc.roster.rob"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~15.69 {Tags: ["ssbrc","ssbrc.roster.snake"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~16.31 {Tags: ["ssbrc","ssbrc.roster.sonic"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~16.92 {Tags: ["ssbrc","ssbrc.roster.shadow"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~17.54 {Tags: ["ssbrc","ssbrc.roster.mega_man"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~18.16 {Tags: ["ssbrc","ssbrc.roster.ryu"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~1.58 ~18.77 {Tags: ["ssbrc","ssbrc.roster.cloud"], height: .58, width: .58}
+
+summon minecraft:interaction ~24.78 ~.97 ~13.85 {Tags: ["ssbrc","ssbrc.roster.alucard"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~.97 ~14.46 {Tags: ["ssbrc","ssbrc.roster.joker"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~.97 ~158 {Tags: ["ssbrc","ssbrc.roster.hero"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~.97 ~15.69 {Tags: ["ssbrc","ssbrc.roster.steve"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~.97 ~16.31 {Tags: ["ssbrc","ssbrc.roster.sora"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~.97 ~16.92 {Tags: ["ssbrc","ssbrc.roster.shovel_knight"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~.97 ~17.54 {Tags: ["ssbrc","ssbrc.roster.altered_beast"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~.97 ~18.16 {Tags: ["ssbrc","ssbrc.roster.yar"], height: .58, width: .58}
+
+summon minecraft:interaction ~24.78 ~-.08 ~14.16 {Tags: ["ssbrc","ssbrc.roster.peach"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~-.08 ~14.77 {Tags: ["ssbrc","ssbrc.roster.toon_link"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~-.08 ~15.39 {Tags: ["ssbrc","ssbrc.roster.lucario"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~-.08 ~160 {Tags: ["ssbrc","ssbrc.roster.unknown"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~-.08 ~16.61 {Tags: ["ssbrc","ssbrc.roster.unknown"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~-.08 ~17.23 {Tags: ["ssbrc","ssbrc.roster.unknown"], height: .58, width: .58}
+summon minecraft:interaction ~24.78 ~-.08 ~17.84 {Tags: ["ssbrc","ssbrc.roster.unknown"], height: .58, width: .58}

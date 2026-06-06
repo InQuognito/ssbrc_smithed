@@ -1,0 +1,1 @@
+{"function":"minecraft:set_lore","entity":"this","lore":[{"text":"This fighter does not","color":"gray","bold":false,"italic":false},{"text":"possess any utility abilities.","color":"gray","bold":false,"italic":false}],"mode":"append"}

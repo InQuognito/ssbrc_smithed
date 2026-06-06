@@ -1,0 +1,6 @@
+{
+	"parent": "ssbrc:blueprint/booth/fighter_select/rig/heros_shield_toon",
+	"textures": {
+		"0": "ssbrc:blueprint/booth/fighter_select/rig/hero"
+	}
+}

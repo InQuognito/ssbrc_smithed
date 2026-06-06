@@ -1,0 +1,64 @@
+{
+	"namespace": "ssbrc",
+	"booth_name": "Super Smash Bros. Re:Crafted",
+	"bounding_boxes": {
+		"main": {
+			"position": {
+				"x": {"min": -97, "max": -64},
+				"y": {"min": 63, "max": 90},
+				"z": {"min": 72, "max": 94}
+			}
+		}
+	},
+	"ticking_functions": {
+		"ssbrc:tick": "1t"
+	},
+	"sticker_book": {
+		"background_color": "#7851a9",
+		"region": "patched_plateaus",
+		"stickers": [
+			{
+				"sticker_id": "introduction",
+				"sticker_texture": "ssbrc:booth/sticker/introduction",
+				"sticker_name": "Awakening",
+				"unobtained_text": "Talk to Sandbag at the entrance of the booth",
+				"obtained_text": "Thanks for checking us out!"
+			},
+			{
+				"sticker_id": "play_game",
+				"sticker_texture": "ssbrc:booth/sticker/play_game",
+				"sticker_name": "Initiation",
+				"unobtained_text": "Play one game of SSBRC (You don't even need to finish it!)",
+				"obtained_text": "Thanks for playing!"
+			},
+			{
+				"sticker_id": "buy_item",
+				"sticker_texture": "ssbrc:booth/sticker/buy_item",
+				"sticker_name": "Saavy Spender",
+				"unobtained_text": "Buy your first collectible",
+				"obtained_text": "First of many!"
+			},
+			{
+				"sticker_id": "gilded",
+				"sticker_texture": "ssbrc:booth/sticker/gilded",
+				"sticker_name": "Living Large",
+				"unobtained_text": "Unlock your first gold skin by winning a game with a fighter",
+				"obtained_text": "Pathway to domination!"
+			},
+			{
+				"sticker_id": "goat",
+				"sticker_texture": "ssbrc:booth/sticker/goat",
+				"sticker_name": "G.O.A.T",
+				"unobtained_text": "Unlock all the collectibles for one last surprise",
+				"obtained_text": "You're still here? Thank you so much for enjoying our booth!\n\nCheck out our map for more, and head over to our Discord to show us this sticker so we know you're cool ;)"
+			}
+		]
+	},
+	"balloons": [
+		{
+			"balloon_id": "smash_ball",
+			"balloon_name": "Smash Ball",
+			"balloon_model": "ssbrc:booth/balloon"
+		}
+	]
+}

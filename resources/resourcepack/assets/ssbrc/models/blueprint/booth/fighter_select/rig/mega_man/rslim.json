@@ -1,0 +1,6 @@
+{
+	"parent": "ssbrc:blueprint/booth/fighter_select/rig/rslim",
+	"textures": {
+		"0": "ssbrc:blueprint/booth/fighter_select/rig/mega_man"
+	}
+}

@@ -1,0 +1,15 @@
+import { MCFunction, abs, execute, raw, rel } from 'sandstone'
+
+import { fighters } from './core.ts'
+
+var step = .62
+
+MCFunction('booth/init/roster', () => {
+	execute.positioned(rel(0, 1, .75)).rotated(abs(0, 0)).summon('minecraft:item_display').run.functionCmd('entity/item_display')
+		MCFunction('using_macros', () => {
+    		raw('/tp @s $(test)')
+		}), 'with', 'storage', 'macro_test', 'Test')
+	for (const [key, value] of Object.entries(fighters)) {
+		//
+	}
+})

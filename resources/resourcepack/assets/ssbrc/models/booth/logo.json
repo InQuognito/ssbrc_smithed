@@ -1,0 +1,105 @@
+{
+	"textures": {
+		"front": "ssbrc:booth/logo/front",
+		"mid": "ssbrc:booth/logo/mid",
+		"back": "ssbrc:booth/logo/back"
+	},
+	"elements": [
+		{
+			"from": [
+				3,
+				2,
+				7.75
+			],
+			"to": [
+				15,
+				14,
+				7.75
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					9,
+					8,
+					7.5
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#front"
+				}
+			}
+		},
+		{
+			"from": [
+				3,
+				2,
+				8
+			],
+			"to": [
+				15,
+				14,
+				8
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					9,
+					8,
+					8
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#back"
+				}
+			}
+		},
+		{
+			"from": [
+				3,
+				2,
+				7.875
+			],
+			"to": [
+				15,
+				14,
+				7.875
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					9,
+					8,
+					7.75
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						16,
+						16
+					],
+					"texture": "#mid"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,4 @@
+{
+	"replace": false,
+	"values": ["ssbrc:booth/clone_ridley/on_load", "ssbrc:booth/fighter_select/rig/on_load", "ssbrc:game/fighter/mega_man/beat_call/rig/on_load"]
+}

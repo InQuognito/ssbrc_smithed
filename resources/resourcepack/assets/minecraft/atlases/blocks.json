@@ -1,0 +1,24 @@
+{
+	"sources": [
+		{
+			"type": "directory",
+			"source": "booth",
+			"prefix": "booth/"
+		},
+		{
+			"type": "directory",
+			"source": "fighter",
+			"prefix": "fighter/"
+		},
+		{
+			"type": "directory",
+			"source": "smash_item",
+			"prefix": "smash_item/"
+		},
+		{
+			"type": "directory",
+			"source": "blueprint",
+			"prefix": "blueprint/"
+		}
+	]
+}

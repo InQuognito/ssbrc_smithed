@@ -1,0 +1,49 @@
+{
+	"textures": {
+		"0": "ssbrc:blueprint/booth/clone_ridley/texture",
+		"particle": "minecraft:item/pufferfish"
+	},
+	"display": {
+		"head": {
+			"rotation": [0, 180, 0]
+		}
+	},
+	"elements": [
+		{
+			"from": [6.31542, 7.02733, 5.93571],
+			"to": [9.68458, 13.37267, 9.96428],
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0,
+				"origin": [8, 8, 8]
+			},
+			"faces": {
+				"north": {
+					"uv": [5.3125, 6.5625, 5.5, 6.9375],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [5.0625, 6.5625, 5.3125, 6.9375],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [5.75, 6.5625, 5.9375, 6.9375],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [5.5, 6.5625, 5.75, 6.9375],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [5.5, 6.5625, 5.3125, 6.3125],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [5.6875, 6.3125, 5.5, 6.5625],
+					"texture": "#0"
+				}
+			}
+		}
+	]
+}

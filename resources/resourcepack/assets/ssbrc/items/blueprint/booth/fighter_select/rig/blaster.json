@@ -1,0 +1,101 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": "AJ_INTERNAL_EMPTY",
+				"model": {
+					"type": "minecraft:empty"
+				}
+			},
+			{
+				"when": "toon_link",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/toon_link/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "roy",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/roy/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fox",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/fox/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "lucario",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/lucario/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "ness",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/ness/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "mega_man",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/mega_man/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "hero",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/hero/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "peach",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/peach/blaster",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "ssbrc:blueprint/booth/fighter_select/rig/blaster",
+			"tints": [
+				{"type": "minecraft:dye", "default": [1, 1, 1]}
+			]
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ssbrc_smithed26",
+  "version": "0.0.1",
+  "description": "SSBRC - Smithed '26",
+  "type": "module",
+  "module": "src/index.ts",
+  "scripts": {
+    "dev:watch": "sand watch",
+    "dev:build": "sand build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "sandstone-cli": "^2.4.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "sandstone": "^1.0.0-beta.5"
+  }
+}

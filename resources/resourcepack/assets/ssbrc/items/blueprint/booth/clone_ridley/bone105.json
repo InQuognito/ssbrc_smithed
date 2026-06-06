@@ -1,0 +1,9 @@
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "ssbrc:blueprint/booth/clone_ridley/bone105",
+		"tints": [
+			{"type": "minecraft:dye", "default": [1, 1, 1]}
+		]
+	}
+}

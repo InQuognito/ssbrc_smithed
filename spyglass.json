@@ -1,0 +1,11 @@
+{
+    "env": {
+        "exclude": [
+            "node_modules",
+            ".git",
+            ".github",
+			".sandstone",
+            "src"
+        ]
+    }
+}

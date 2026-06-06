@@ -1,0 +1,3 @@
+tellraw @s [{"text":"Hero\n","color":"gold"},{"text":"- The Luminary -\n","color":"yellow"},{"text":"In SSBRC v3.0, Hero has undergone quite a rewrite. His magic system has been reimplemented to behave just like in Super Smash Bros. Ultimate - random spells and all! This time around, he also has access to support spells that will exclusively appear in team battles so that he can act as somewhat of a White Mage archetype if you so choose. If Hero finds himself in last place in a free for all, his Pep Powers will trigger, allowing him to turn the tide of battle in his favor.\n","color":"white"}]
+
+function ssbrc:booth/interaction/common

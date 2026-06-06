@@ -1,0 +1,211 @@
+##################
+# Fighter Select #
+##################
+
+# Fighters
+execute positioned ~-6 ~-5 ~23 rotated 180 0 summon minecraft:item_display run function ssbrc:entity/fighter_display {fighter:"mario",color:"red",model:878750}
+execute positioned ~-9 ~-5 ~23 rotated 180 0 summon minecraft:item_display run function ssbrc:entity/fighter_display {fighter:"link",color:"dark_green",model:878650}
+
+execute positioned ~-12 ~-5 ~20 rotated -90 0 summon minecraft:item_display run function ssbrc:entity/fighter_display {fighter:"fox",color:"white",model:878600}
+execute positioned ~-12 ~-5 ~17 rotated -90 0 summon minecraft:item_display run function ssbrc:entity/fighter_display {fighter:"lucario",color:"blue",model:878700}
+execute positioned ~-12 ~-5 ~14 rotated -90 0 summon minecraft:item_display run function ssbrc:entity/fighter_display {fighter:"ness",color:"dark_purple",model:878850}
+
+execute positioned ~-9 ~-5 ~11 rotated 0 0 summon minecraft:item_display run function ssbrc:entity/fighter_display {fighter:"captain_falcon",color:"red",model:878550}
+execute positioned ~-6 ~-5 ~11 rotated 0 0 summon minecraft:item_display run function ssbrc:entity/fighter_display {fighter:"sora",color:"white",model:878950}
+
+# Text
+summon minecraft:text_display ~-1 ~-3 ~21.49 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[180f,0f],brightness:{sky:15,block:15},transformation:[2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~-1 ~-4 ~21.49 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[180f,0f],brightness:{sky:15,block:15},transformation:[1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1f],background:0}
+function ssbrc:booth/colosseum/display/check
+
+# Smithed Props
+execute positioned ~ ~ ~18 rotated 90 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+
+execute positioned ~-7.5 ~-3 ~14 rotated 0 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+execute positioned ~-7.5 ~-3 ~17 rotated 0 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+execute positioned ~-7.5 ~-3 ~20 rotated 0 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+
+#############
+# Main Room #
+#############
+summon minecraft:text_display ~20.75 ~0.25 ~15.5 {Tags:["ssbrc","summit.booth_decoration"],text:'["",{"text":"ℹ ","color":"yellow"},{"text":"In order to get your stamp, head downstairs and fight in the "},{"text":"Colosseum","color":"#FFB4B3"},{"text":"!"}]',brightness:{sky:15,block:15},billboard:"vertical",line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+
+# Fiend's Cauldron
+summon minecraft:item_display ~14 ~-0.75 ~13 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878503}},Rotation:[-90f,0f],transformation:[1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1f]}
+
+# SSBRC Info
+summon minecraft:text_display ~9.51 ~1.25 ~13 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"What is SSBRC?","underlined":true}',Rotation:[-90f,0f],brightness:{sky:15,block:15},transformation:[3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~9.51 ~2.15 ~11.5 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"(Super Smash Bros. Re:Crafted)","color":"gray"}',Rotation:[-90f,0f],brightness:{sky:15,block:15},transformation:[0.4f,0f,0f,0f,0f,0.4f,0f,0f,0f,0f,0.4f,0f,0f,0f,0f,1f],background:0}
+
+summon minecraft:text_display ~9.51 ~0.75 ~13 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"SSBRC is a multiplayer PvP game inspired by the Super Smash Bros. franchise."}',Rotation:[-90f,0f],brightness:{sky:15,block:15},line_width:300,transformation:[0.75f,0f,0f,0f,0f,0.75f,0f,0f,0f,0f,0.75f,0f,0f,0f,0f,1f],background:0}
+
+summon minecraft:text_display ~9.51 ~0.25 ~16 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"The characters you love, redesigned.","color":"yellow"}',Rotation:[-90f,0f],brightness:{sky:15,block:15},line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~9.51 ~-1 ~16 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"SSBRC is home to 38 fighters and counting, aiming to match Smash Ultimate\'s roster and surpass it one day. Each and every fighter is carefully designed based on its source material, adapted for Minecraft combat mechanics. We even have newcomers never seen playable in Smash Bros, which you can find an example of in the arena section downstairs!"}',Rotation:[-90f,0f],brightness:{sky:15,block:15},line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+
+summon minecraft:text_display ~9.51 ~0.25 ~13 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Beautifully handcrafted stages.","color":"yellow"}',Rotation:[-90f,0f],brightness:{sky:15,block:15},line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~9.51 ~-0.75 ~13 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Experience tons of custom environments from your favorite fighters\' games, many featuring custom mechanics and hazards to spice up gameplay. Trick your friends into getting crushed by a Thwomp on Bowser\'s Castle, or run from ghosts together on Pac-Maze, the choice is yours."}',Rotation:[-90f,0f],brightness:{sky:15,block:15},line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+
+summon minecraft:text_display ~9.51 ~0.25 ~10 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Constantly improving.","color":"yellow"}',Rotation:[-90f,0f],brightness:{sky:15,block:15},line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~9.51 ~-0.88 ~10 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"We have been working diligently ever since SSBRC\'s first release in order to create updates that improve upon the game based on player feedback. SSBRC has several more updates planned and a long term goal to implement the whole roster of Super Smash Bros. Ultimate, making it the most ambitious project of its kind."}',Rotation:[-90f,0f],brightness:{sky:15,block:15},line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+
+summon minecraft:text_display ~12.5 ~1 ~8.51 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Featured Stages"}',brightness:{sky:15,block:15},transformation:[2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:item_display ~12.5 ~-0.2 ~8.51 {Tags:["ssbrc","ssbrc.stage_slideshow","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878462}},brightness:{sky:15,block:15},transformation:[1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1f]}
+scoreboard players set stage_slideshow ssbrc.temp 878462
+function ssbrc:booth/stage_slideshow
+
+summon minecraft:text_display ~17.5 ~1 ~8.51 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Want to see your art in the game?","color":"yellow"}',brightness:{sky:15,block:15},transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~18.5 ~0.25 ~8.51 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Join our Discord and submit a Miiverse post! After going through review and getting approved, your art will be in the next update!"}',brightness:{sky:15,block:15},line_width:225,transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+
+summon minecraft:item_display ~15.5 ~-0.75 ~8.52 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878500}},transformation:{left_rotation:[0f,0f,0.15f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f]}}
+summon minecraft:item_display ~17.75 ~-0.25 ~8.52 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878500}},transformation:{left_rotation:[0f,0f,-0.1f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f]}}
+
+summon minecraft:item_display ~16 ~0.5 ~8.52 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878501}},transformation:{left_rotation:[0f,0f,0.15f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f]}}
+summon minecraft:item_display ~16.5 ~ ~8.51 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878502}},transformation:{left_rotation:[0f,0f,-0.15f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f],translation:[0f,0f,0f]}}
+
+summon minecraft:text_display ~7 ~-4.5 ~15.51 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Coming to v3..."}',brightness:{sky:15,block:15},transformation:[3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~11.49 ~-4 ~18 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Click me!","color":"yellow"}',Rotation:[90f,0f],brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,-0.3f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.75f,0.75f,0.75f],translation:[0f,0f,0f]},background:0}
+summon minecraft:text_display ~11 ~-6.5 ~15.51 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"3 out of 7 ;)"}',brightness:{sky:15,block:15},transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f],background:0}
+execute positioned ~4 ~-5 ~17 rotated 0 0 summon minecraft:item_display run function ssbrc:entity/fighter_display_display {fighter:"lucario",color:"blue",model:878700}
+execute positioned ~7 ~-5 ~17 rotated 0 0 summon minecraft:item_display run function ssbrc:entity/fighter_display_display {fighter:"peach",color:"light_purple",model:878470}
+execute positioned ~10 ~-5 ~17 rotated 0 0 summon minecraft:item_display run function ssbrc:entity/fighter_display_display {fighter:"toon_link",color:"green",model:878471}
+execute positioned ~10 ~-5.5 ~16.5 rotated 0 0 run function animated_java:ssbrc_triforce/summon {args:{animation:"spin",start_animation:true}}
+
+# Links
+summon minecraft:text_display ~12 ~1 ~17.49 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Come Say Hi :D"}',Rotation:[180f,0f],brightness:{sky:15,block:15},transformation:[2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,2f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:item_display ~12 ~ ~17.49 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[180f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878459}},transformation:[1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1f]}
+
+summon minecraft:interaction ~13.55 ~-0.4 ~17.8 {Tags:["ssbrc","ssbrc.link.discord"],height:0.8,width:0.8}
+summon minecraft:interaction ~12.5 ~-0.4 ~17.8 {Tags:["ssbrc","ssbrc.link.planetminecraft"],height:0.8,width:0.8}
+summon minecraft:interaction ~11.475 ~-0.4 ~17.8 {Tags:["ssbrc","ssbrc.link.youtube"],height:0.8,width:0.8}
+summon minecraft:interaction ~10.45 ~-0.4 ~17.8 {Tags:["ssbrc","ssbrc.link.patreon"],height:0.8,width:0.8}
+
+# Roster
+summon minecraft:text_display ~24.49 ~4 ~16 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[90f,0f],text:'{"text":"Roster"}',brightness:{sky:15,block:15},transformation:[3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:item_display ~24.49 ~0.5 ~16 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[90f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878460}},brightness:{sky:15,block:15},transformation:[3.5f,0f,0f,0f,0f,3.5f,0f,0f,0f,0f,3.5f,0f,0f,0f,0f,1f]}
+summon minecraft:text_display ~24.49 ~3.6 ~18.75 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[90f,0f],text:'{"text":"Click me!","color":"yellow"}',brightness:{sky:15,block:15},transformation:{left_rotation:[0f,0f,-0.3f,1f],right_rotation:[0f,0f,0f,1f],scale:[1f,1f,1f],translation:[0f,0f,0f]},background:0}
+
+summon minecraft:interaction ~24.78 ~2.81 ~13.23 {Tags:["ssbrc","ssbrc.roster.mario"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~13.85 {Tags:["ssbrc","ssbrc.roster.luigi"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~14.46 {Tags:["ssbrc","ssbrc.roster.bowser"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~158 {Tags:["ssbrc","ssbrc.roster.donkey_kong"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~15.69 {Tags:["ssbrc","ssbrc.roster.king_k_rool"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~16.31 {Tags:["ssbrc","ssbrc.roster.link"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~16.92 {Tags:["ssbrc","ssbrc.roster.zelda"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~17.54 {Tags:["ssbrc","ssbrc.roster.ganondorf"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~18.16 {Tags:["ssbrc","ssbrc.roster.samus"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.81 ~18.77 {Tags:["ssbrc","ssbrc.roster.dark_samus"],height:0.58,width:0.58}
+
+summon minecraft:interaction ~24.78 ~2.20 ~13.23 {Tags:["ssbrc","ssbrc.roster.kirby"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~13.85 {Tags:["ssbrc","ssbrc.roster.fox"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~14.46 {Tags:["ssbrc","ssbrc.roster.wolf"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~158 {Tags:["ssbrc","ssbrc.roster.pikachu"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~15.69 {Tags:["ssbrc","ssbrc.roster.jigglypuff"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~16.31 {Tags:["ssbrc","ssbrc.roster.pokemon_trainer"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~16.92 {Tags:["ssbrc","ssbrc.roster.greninja"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~17.54 {Tags:["ssbrc","ssbrc.roster.team_rocket"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~18.16 {Tags:["ssbrc","ssbrc.roster.ness"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~2.20 ~18.77 {Tags:["ssbrc","ssbrc.roster.giegue"],height:0.58,width:0.58}
+
+summon minecraft:interaction ~24.78 ~1.58 ~13.23 {Tags:["ssbrc","ssbrc.roster.captain_falcon"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~13.85 {Tags:["ssbrc","ssbrc.roster.byleth"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~14.46 {Tags:["ssbrc","ssbrc.roster.pit"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~158 {Tags:["ssbrc","ssbrc.roster.rob"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~15.69 {Tags:["ssbrc","ssbrc.roster.snake"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~16.31 {Tags:["ssbrc","ssbrc.roster.sonic"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~16.92 {Tags:["ssbrc","ssbrc.roster.shadow"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~17.54 {Tags:["ssbrc","ssbrc.roster.mega_man"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~18.16 {Tags:["ssbrc","ssbrc.roster.ryu"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~1.58 ~18.77 {Tags:["ssbrc","ssbrc.roster.cloud"],height:0.58,width:0.58}
+
+summon minecraft:interaction ~24.78 ~0.97 ~13.85 {Tags:["ssbrc","ssbrc.roster.alucard"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~0.97 ~14.46 {Tags:["ssbrc","ssbrc.roster.joker"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~0.97 ~158 {Tags:["ssbrc","ssbrc.roster.hero"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~0.97 ~15.69 {Tags:["ssbrc","ssbrc.roster.steve"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~0.97 ~16.31 {Tags:["ssbrc","ssbrc.roster.sora"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~0.97 ~16.92 {Tags:["ssbrc","ssbrc.roster.shovel_knight"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~0.97 ~17.54 {Tags:["ssbrc","ssbrc.roster.altered_beast"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~0.97 ~18.16 {Tags:["ssbrc","ssbrc.roster.yar"],height:0.58,width:0.58}
+
+summon minecraft:interaction ~24.78 ~-08 ~14.16 {Tags:["ssbrc","ssbrc.roster.peach"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~-08 ~14.77 {Tags:["ssbrc","ssbrc.roster.toon_link"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~-08 ~15.39 {Tags:["ssbrc","ssbrc.roster.lucario"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~-08 ~160 {Tags:["ssbrc","ssbrc.roster.unknown"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~-08 ~16.61 {Tags:["ssbrc","ssbrc.roster.unknown"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~-08 ~17.23 {Tags:["ssbrc","ssbrc.roster.unknown"],height:0.58,width:0.58}
+summon minecraft:interaction ~24.78 ~-08 ~17.84 {Tags:["ssbrc","ssbrc.roster.unknown"],height:0.58,width:0.58}
+
+# Sandbag
+summon minecraft:item_display ~25 ~0.8 ~24 {Tags:["ssbrc","summit.booth_decoration","entityview.ignore"],Rotation:[135f,0f],item:{id:"minecraft:bone_meal",components:{"minecraft:custom_model_data":878456}}}
+summon minecraft:interaction ~25 ~ ~24 {Tags:["ssbrc","ssbrc.sandbag"],height:1.6,width:1.1}
+
+# Smithed Props
+execute positioned ~18 ~6 ~12 rotated 90 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+execute positioned ~22 ~6 ~12 rotated 90 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+execute positioned ~18 ~6 ~18 rotated 90 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+execute positioned ~22 ~6 ~18 rotated 90 0 summon minecraft:item_display run function ssbrc:booth/init/light_bar
+
+#############
+# Side Room #
+#############
+
+# Timeline
+summon minecraft:item_display ~7.49 ~1 ~11 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[90f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878461}},brightness:{sky:15,block:15},transformation:[1.25f,0f,0f,0f,0f,1.25f,0f,0f,0f,0f,1.25f,0f,0f,0f,0f,1f]}
+summon minecraft:text_display ~7.49 ~4 ~11 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[90f,0f],text:'{"text":"We keep going up.","color":"yellow"}',brightness:{sky:15,block:15},transformation:[1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1.5f,0f,0f,0f,0f,1f],background:0}
+summon minecraft:text_display ~7.49 ~3 ~11 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[90f,0f],text:'{"text":"Throughout the past 3 years, our map started from nothing and grew explosively after the release of our 2 update. Each of these download counts you see are per update; today, we sit just shy of 4k downloads."}',brightness:{sky:15,block:15},line_width:250,transformation:[0.75f,0f,0f,0f,0f,0.75f,0f,0f,0f,0f,0.75f,0f,0f,0f,0f,1f],background:0}
+
+# Display Cases
+summon minecraft:item_display ~-6 ~3 ~23 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878504}},Rotation:[-135f,0f],brightness:{sky:15,block:15},transformation:[0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,0.5f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-8.15 ~3.25 ~21.85 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878505}},Rotation:[-60f,0f],brightness:{sky:15,block:15},transformation:[0.9f,0f,0f,0f,0f,0.9f,0f,0f,0f,0f,0.9f,0f,0f,0f,0f,1f]}
+summon minecraft:item_display ~-9 ~3 ~20 {Tags:["ssbrc","summit.booth_decoration"],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878506}},Rotation:[-160f,0f],brightness:{sky:15,block:15},transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f]}
+
+##############
+# Item Stall #
+##############
+
+# Anna
+execute positioned ~29 ~0.5 ~15 rotated -90 0 run function animated_java:ssbrc_anna/summon {args:{animation:"idle",start_animation:true}}
+summon minecraft:interaction ~29 ~1.5 ~15 {Tags:["ssbrc","ssbrc.anna"],height:1.1,width:1.1}
+
+# Assist Trophy
+summon minecraft:item_display ~27 ~2 ~15 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[-90f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878480}}}
+summon minecraft:interaction ~27 ~1.5 ~15 {Tags:["ssbrc","ssbrc.item.assist_trophy"],height:0.7,width:0.5}
+
+# Green Shell
+summon minecraft:item_display ~27 ~3 ~15 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[-90f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878481}}}
+summon minecraft:interaction ~27 ~2.5 ~15 {Tags:["ssbrc","ssbrc.item.green_shell"],height:0.6,width:0.75}
+
+# Killing Edge
+execute positioned ~27 ~1.5 ~17 summon minecraft:item_display run function ssbrc:booth/init/item {name:"killing_edge",model:878482}
+
+# Lips' Stick
+execute positioned ~29 ~3.5 ~18 summon minecraft:item_display run function ssbrc:booth/init/item {name:"lips_stick",model:878483}
+
+# Maxim Tomato
+execute positioned ~27 ~3.5 ~14 summon minecraft:item_display run function ssbrc:booth/init/item {name:"maxim_tomato",model:878484}
+
+# Music CD
+execute positioned ~27 ~3.5 ~16 summon minecraft:item_display run function ssbrc:booth/init/item {name:"music_cd",model:878485}
+
+# Steel Diver
+execute positioned ~28 ~2.5 ~18 summon minecraft:item_display run function ssbrc:booth/init/item {name:"steel_diver",model:878486}
+
+###########
+# Outside #
+###########
+
+# Logo
+summon minecraft:item_display ~25.4 ~7.5 ~6.9 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[-135f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878456}},transformation:[8f,0f,0f,0f,0f,8f,0f,0f,0f,0f,8f,0f,0f,0f,0f,1f]}
+
+# Name
+summon minecraft:text_display ~7 ~0.5 ~24.51 {Tags:["ssbrc","summit.booth_decoration"],text:'{"text":"Super Smash Bros. Re:Crafted","color":"yellow"}',brightness:{sky:15,block:15},transformation:[3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,3f,0f,0f,0f,0f,1f],background:0}
+
+summon minecraft:text_display ~ ~-0.49 ~2.825 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[180f,-90f],text:'{"text":"Super Smash Bros. Re:Crafted"}',line_width:75,brightness:{sky:15,block:15},transformation:[1.75f,0f,0f,0f,0f,1.75f,0f,0f,0f,0f,1.75f,0f,0f,0f,0f,1f],background:0}
+
+# Clone Ridley
+execute positioned ~24 ~10.5 ~9 rotated -135 0 run function animated_java:ssbrc_clone_ridley/summon/default
+
+# Smithed Props
+summon minecraft:item_display ~27 ~11 ~12 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[125f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878479}}}
+summon minecraft:item_display ~21 ~11 ~6 {Tags:["ssbrc","summit.booth_decoration"],Rotation:[-55f,0f],item:{id:"minecraft:stick",components:{"minecraft:custom_model_data":878479}}}
+
+execute if predicate {"condition":"minecraft:time_check","value":{"min":13500,"max":23000}} run function ssbrc:booth/night

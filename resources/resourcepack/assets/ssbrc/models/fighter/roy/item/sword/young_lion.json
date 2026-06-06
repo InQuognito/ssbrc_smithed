@@ -1,0 +1,6 @@
+{
+	"parent": "ssbrc:template/item/held_outward",
+	"textures": {
+		"layer0": "ssbrc:fighter/roy/item/sword/young_lion"
+	}
+}

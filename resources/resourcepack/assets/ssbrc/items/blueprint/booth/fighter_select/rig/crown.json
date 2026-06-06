@@ -1,0 +1,101 @@
+{
+	"model": {
+		"type": "minecraft:select",
+		"property": "minecraft:custom_model_data",
+		"cases": [
+			{
+				"when": "AJ_INTERNAL_EMPTY",
+				"model": {
+					"type": "minecraft:empty"
+				}
+			},
+			{
+				"when": "toon_link",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/toon_link/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "roy",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/roy/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "fox",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/fox/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "lucario",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/lucario/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "ness",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/ness/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "mega_man",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/mega_man/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "hero",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/hero/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			},
+			{
+				"when": "peach",
+				"model": {
+					"type": "minecraft:model",
+					"model": "ssbrc:blueprint/booth/fighter_select/rig/peach/crown",
+					"tints": [
+						{"type": "minecraft:dye", "default": [1, 1, 1]}
+					]
+				}
+			}
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "ssbrc:blueprint/booth/fighter_select/rig/crown",
+			"tints": [
+				{"type": "minecraft:dye", "default": [1, 1, 1]}
+			]
+		}
+	}
+}

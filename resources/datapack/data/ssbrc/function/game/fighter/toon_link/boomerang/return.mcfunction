@@ -1,0 +1,21 @@
+teleport @s[scores={temp=20}] ^ ^ ^.01
+teleport @s[scores={temp=21}] ^ ^ ^.03
+teleport @s[scores={temp=22}] ^ ^ ^.06
+teleport @s[scores={temp=23}] ^ ^ ^.09
+teleport @s[scores={temp=24}] ^ ^ ^.12
+teleport @s[scores={temp=25}] ^ ^ ^.15
+teleport @s[scores={temp=26}] ^ ^ ^.18
+teleport @s[scores={temp=27}] ^ ^ ^.21
+teleport @s[scores={temp=28}] ^ ^ ^.24
+teleport @s[scores={temp=29}] ^ ^ ^.27
+teleport @s[scores={temp=30}] ^ ^ ^.30
+teleport @s[scores={temp=31}] ^ ^ ^.33
+teleport @s[scores={temp=32}] ^ ^ ^.36
+teleport @s[scores={temp=33}] ^ ^ ^.39
+teleport @s[scores={temp=34}] ^ ^ ^.42
+teleport @s[scores={temp=35}] ^ ^ ^.45
+teleport @s[scores={temp=36}] ^ ^ ^.48
+teleport @s[scores={temp=37}] ^ ^ ^.51
+teleport @s[scores={temp=38}] ^ ^ ^.54
+teleport @s[scores={temp=39}] ^ ^ ^.57
+execute if score @s temp matches 40.. run return run teleport @s ^ ^ ^.60

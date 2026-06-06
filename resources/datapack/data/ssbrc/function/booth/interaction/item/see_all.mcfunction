@@ -1,0 +1,1 @@
+tellraw @s ["",{"text":"Anna | ","color":"yellow","bold":true},{"text":"Aaaand that's everything! I hope you come back soon; In the meantime, why don't you go to the Colosseum for some more battles?\n"}]
