@@ -48,6 +48,9 @@ execute positioned -64 76.6 82 rotated 90 0 summon minecraft:text_display run fu
 
 execute positioned -69 73.05 80 run function ssbrc:booth/init/upcoming_fighters
 
+execute positioned -69 75 72 rotated 0 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/stage/fountain_of_dreams", scale: 4}
+execute positioned -69 75 88 rotated 180 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/stage/gyromite", scale: 4}
+
 # Item Slideshow
 execute positioned -64 75 75 rotated 90 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "dynamic", model: "null", scale: 1}
 execute positioned -64 75 77.5 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/header {type: "dynamic", text: "null", color: "white"}
