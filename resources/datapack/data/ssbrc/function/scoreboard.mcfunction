@@ -1,5 +1,4 @@
 # Core
-
 scoreboard objectives add ssbrc.burning dummy
 scoreboard objectives add ssbrc.const dummy
 scoreboard objectives add ssbrc.frostbite dummy
@@ -74,19 +73,3 @@ scoreboard players set 700 ssbrc.const 700
 scoreboard players set 800 ssbrc.const 800
 scoreboard players set 900 ssbrc.const 900
 scoreboard players set 1000 ssbrc.const 1000
-
-# Variables
-scoreboard players set mario.fireball.rotation ssbrc.const 160
-scoreboard players set mario.super_jump.threshold ssbrc.const 10
-
-scoreboard players set sora.drive.threshold.bar ssbrc.const 100
-scoreboard players set sora.drive.threshold.basic ssbrc.const 3
-scoreboard players set sora.drive.threshold.master ssbrc.const 5
-scoreboard players set sora.mp.max ssbrc.const 10
-scoreboard players set sora.firaga.cost ssbrc.const 1
-scoreboard players set sora.firaza.cost ssbrc.const 3
-scoreboard players set sora.blizzaga.cost ssbrc.const 3
-scoreboard players set sora.blizzaza.cost ssbrc.const 1
-scoreboard players set sora.thundaga.cost ssbrc.const 5
-scoreboard players set sora.thundaza.cost ssbrc.const 5
-scoreboard players set sora.thundaza.range ssbrc.const 30

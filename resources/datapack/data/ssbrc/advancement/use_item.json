@@ -1,0 +1,19 @@
+{
+	"parent": "ssbrc:root",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": "#ssbrc:equipment",
+					"predicates": {
+						"minecraft:custom_data": {}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "ssbrc:game/fighter/_logic/use_item/get"
+	}
+}

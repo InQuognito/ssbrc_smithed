@@ -9,11 +9,11 @@ execute if items entity @s[advancements={ssbrc:use_item/any=true}] weapon.mainha
 execute if score @s ssbrc.burning matches 1.. run function ssbrc:game/fighter/_logic/effect/burning
 execute if score @s ssbrc.frostbite.timer matches 1.. run function ssbrc:game/fighter/_logic/effect/frostbite/tick
 
-function ssbrc:game/fighter/_logic/specific_tick
+function ssbrc:game/fighter/_logic/specific_tick with entity @s equipment.body.components."minecraft:custom_data"
 
 execute if score @s ssbrc.immobile matches 1.. run function ssbrc:game/fighter/_logic/effect/mobility/tick
 
-execute positioned -178.0 63.0 -47.0 as @e[type=#ssbrc:projectiles,tag=ssbrc.projectile,predicate=ssbrc:id_match,dx=41,dy=100,dz=41] at @s run function ssbrc:game/fighter/_logic/ability/tick
+execute positioned -178.0 63.0 -47.0 as @e[type=#ssbrc:projectiles,tag=ssbrc.projectile,predicate=ssbrc:owner,dx=41,dy=100,dz=41] at @s run function ssbrc:game/fighter/_logic/ability/tick
 
 scoreboard players reset #entity_hit ssbrc.temp
 scoreboard players reset @s ssbrc.jump
