@@ -35,7 +35,11 @@ execute positioned -98 71.05 91 rotated -90 0 run function ssbrc:booth/fighter_s
 execute positioned -95 71 74 rotated -45 0 summon minecraft:mannequin run function ssbrc:entity/mannequin {id: "anna", subtitle: "Shop"}
 
 # Timeline
-execute positioned -84 75 83 rotated 180 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/timeline", scale: 2}
+execute positioned -82.5 77 83 rotated 180 0 summon minecraft:text_display run function ssbrc:entity/text_display/small_subtitle {type: "static", text: "And it's only getting", color: "white"}
+execute positioned -82.25 76 83 rotated 180 0 summon minecraft:text_display run function ssbrc:entity/text_display/title {type: "static", text: "bigger.", color: "yellow"}
+execute positioned -81. 77.5 83 rotated 180 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/timeline", scale: 5}
+execute positioned -86.6 74.75 83 rotated 180 0 summon minecraft:text_display run function ssbrc:entity/text_display/small_subtitle {type: "static", text: "Total\nDownloads:", color: "white"}
+execute positioned -86.6 74.25 83 rotated 180 0 summon minecraft:text_display run function ssbrc:entity/text_display/subtitle {type: "static", text: "5500+", color: "yellow"}
 
 # Coming Soon
 execute positioned -64 77.5 80 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/title {type: "static", text: "Coming Soon", color: "aqua"}

@@ -6,9 +6,17 @@ $execute positioned -64 75 75 as @n[type=minecraft:item_display,distance=...01] 
 	minecraft:item_model = "ssbrc:smash_item/$(id)", \
 ]
 
-$execute positioned -64 75 77.5 as @n[type=minecraft:text_display,distance=...01] run data modify entity @s text set value { \
-	translate: "ssbrc.smash_item.$(id)", \
-	color: "gold", \
+$execute positioned -64 75 77.5 as @n[type=minecraft:text_display,distance=...01] run data merge entity @s { \
+	text: { \
+		translate: "ssbrc.smash_item.$(id)", \
+		color: "gold", \
+	}, \
+	transformation: { \
+		left_rotation: [ 0, 0, 0, 1 ], \
+		right_rotation: [ 0, 0, 0, 1 ], \
+		scale: [ 1, 1, 1 ], \
+		translation: [ $(x_offset), 0, 0 ], \
+	}, \
 }
 
 $execute positioned -64 74.95 77.5 as @n[type=minecraft:text_display,distance=...01] run data modify entity @s text set value { \
@@ -16,7 +24,7 @@ $execute positioned -64 74.95 77.5 as @n[type=minecraft:text_display,distance=..
 	color: "yellow", \
 }
 
-$execute positioned -64 73.25 77. as @n[type=minecraft:text_display,distance=...01] run function ssbrc:booth/item_slide/body {id: $(id), offset: $(offset)}
+$execute positioned -64 73.25 77. as @n[type=minecraft:text_display,distance=...01] run function ssbrc:booth/item_slide/body {id: $(id), offset: $(y_offset)}
 
 execute positioned -64 76 75 as @n[type=minecraft:text_display,distance=...01] run data modify entity @s text set value { \
 	score: { \
