@@ -1,0 +1,6 @@
+{
+	"parent": "ssbrc:booth/stage/parent",
+	"textures": {
+		"base": "ssbrc:booth/stage_ballot/rainbow_road"
+	}
+}
