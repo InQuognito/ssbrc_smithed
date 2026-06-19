@@ -1,5 +1,5 @@
 execute positioned ^ ^3 ^ summon minecraft:text_display run function ssbrc:entity/text_display/subtitle {type: "static", text: "Roster", color: "yellow"}
-execute positioned ^ ^ ^ summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/roster", scale: 3.5}
+execute positioned ^ ^ ^ summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/roster", scale: 4}
 
 execute positioned ^-2.77 ^3.81 ^ summon minecraft:interaction run function ssbrc:booth/init/interaction {id: "roster.mario"}
 execute positioned ^-2.15 ^3.81 ^ summon minecraft:interaction run function ssbrc:booth/init/interaction {id: "roster.luigi"}
