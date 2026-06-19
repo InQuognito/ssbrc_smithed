@@ -18,5 +18,5 @@ export default {
   namespace: 'ssbrc',
   packUid: 'LBHlekYt',
   mcmeta: 'latest',
-  saveOptions: { clientPath: 'C:\\Users\\Patri\\AppData\\Roaming\\PrismLauncher\\instances\\Main (Experimental)\\minecraft', world: 'smithed26' },
+  saveOptions: {},
 } as SandstoneConfig
