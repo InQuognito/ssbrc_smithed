@@ -41,9 +41,3 @@ jobs:
             .sandstone/output/resourcepack/assets/
             .sandstone/output/resourcepack/pack.mcmeta
             .sandstone/output/resourcepack/pack.png
-
-      - name: Send message to server
-        env:
-          BLOOM_API_KEY: "${{ secrets.BLOOM_API_KEY }}"
-          SERVER_ID: "${{ secrets.BLOOM_SERVER_ID }}"
-        run: bun run scripts/deploy.ts
