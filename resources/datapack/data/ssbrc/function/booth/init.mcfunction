@@ -34,6 +34,9 @@ execute positioned -98 71.05 91 rotated -90 0 run function ssbrc:booth/fighter_s
 # Shop
 execute positioned -95 71 74 rotated -45 0 summon minecraft:mannequin run function ssbrc:entity/mannequin {id: "anna", subtitle: "Shop"}
 
+# Timeline
+execute positioned -84 75 83 rotated 180 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/timeline", scale: 2}
+
 # Coming Soon
 execute positioned -64 77.5 80 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/title {type: "static", text: "Coming Soon", color: "aqua"}
 execute positioned -64 76.75 80 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/subtitle {type: "static", text: "Update 3.0", color: "yellow"}

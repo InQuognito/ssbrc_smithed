@@ -1,0 +1,17 @@
+{
+	"format_version": "1.21.11",
+	"texture_size": [512, 512],
+	"textures": {
+		"base": "ssbrc:booth/timeline"
+	},
+	"elements": [
+		{
+			"from": [-8, -8, 8],
+			"to": [8, 8, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 4, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#base"}
+			}
+		}
+	]
+}
