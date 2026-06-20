@@ -14,7 +14,7 @@ execute positioned -70.25 66 70 rotated 180 0 summon minecraft:item_display run 
 execute positioned -84 85.25 83 rotated -135 0 summon minecraft:item_display run function ssbrc:entity/item_display/default {type: "dynamic", model: "ssbrc:smash_item/sandbag/default", scale: 1}
 
 # Roster
-execute positioned -96 83.5 78 rotated -90 0 run function ssbrc:booth/init/roster
+execute positioned -96 84 78 rotated -90 0 run function ssbrc:booth/init/roster
 
 # Download
 execute positioned -83. 83 77 rotated 0 0 summon minecraft:text_display run function ssbrc:entity/text_display/small_subtitle {type: "static", text: "Download", color: "yellow"}
@@ -63,17 +63,21 @@ scoreboard players set #item ssbrc.temp 1
 function ssbrc:booth/item_slide/cycle
 
 # Mario Stage Ballot
-execute positioned -64 75.75 83. rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/header {type: "static", text: "Stage Ballot", color: "gold"}
+execute positioned -64 75.75 83. rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/header {type: "static", text: "Mario Stage Ballot", color: "gold"}
 execute positioned -64 75.75 83. rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/subheader {type: "static", text: "Click to vote on our next stage!", color: "gray"}
+
 execute positioned -64 75.25 80 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/body {type: "static", text: "Golden Plains", color: "yellow"}
 execute positioned -64 74.75 80 rotated 90 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/stage_ballot/golden_plains", scale: 2}
 execute positioned -64 73 80 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/body {type: "static", text: "Collect enough\ncoins to get a\nhuge power boost!", color: "gray"}
+
 execute positioned -64 75.25 83. rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/body {type: "static", text: "Rainbow Road", color: "yellow"}
 execute positioned -64 74.75 83. rotated 90 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/stage_ballot/rainbow_road", scale: 2}
+execute positioned -64 74.75 83. rotated 90 0 summon minecraft:interaction run function ssbrc:entity/interaction/picture {path: "stage_ballot {id: \"rainbow_road\"}"}
 execute positioned -64 73 83. rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/body {type: "static", text: "Race down this\ndangerous track while\navoiding your opponents!", color: "gray"}
+
 execute positioned -64 75.25 85 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/body {type: "static", text: "Mario Maker", color: "yellow"}
 execute positioned -64 74.75 85 rotated 90 0 summon minecraft:item_display run function ssbrc:entity/item_display/wall {type: "static", model: "booth/stage_ballot/mario_maker", scale: 2}
-execute positioned -64 73 85 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/body {type: "static", text: "Watch as this\nstage assembles\nin real time!", color: "gray"}
+execute positioned -64 73 85 rotated 90 0 summon minecraft:text_display run function ssbrc:entity/text_display/body {type: "static", text: "Watch this stage\nrandomly generate\nin real time!", color: "gray"}
 
 # Museum
 execute positioned -89 63 74 rotated 0 0 summon minecraft:text_display run function ssbrc:entity/text_display/mini {type: "static", text: "Barrel Cannon", color: "white"}
