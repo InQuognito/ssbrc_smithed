@@ -1,4 +1,6 @@
 # Core
+scoreboard objectives add ssbrc.metric.ballot dummy
+
 scoreboard objectives add ssbrc.burning dummy
 scoreboard objectives add ssbrc.const dummy
 scoreboard objectives add ssbrc.frostbite dummy
