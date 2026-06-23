@@ -21,7 +21,6 @@ jobs:
         run: |
           bun i
           bun dev:build
-          bun dev:deploy
 
       - name: Upload Resourcepack
         uses: actions/upload-artifact@v4
@@ -31,3 +30,14 @@ jobs:
             .sandstone/output/resourcepack/assets/
             .sandstone/output/resourcepack/pack.mcmeta
             .sandstone/output/resourcepack/pack.png
+
+      - name: Publish Pack to Server
+        env:
+          MCS_MANAGER_TOKEN: ${{ secrets.MCS_MANAGER_TOKEN }}
+          MCS_MANAGER_UUID: ${{ secrets.MCS_MANAGER_UUID }}
+          MCS_MANAGER_DAEMON_ID: ${{ secrets.MCS_MANAGER_DAEMON_ID }}
+          MCS_MANAGER_COOKIE: ${{ secrets.MCS_MANAGER_COOKIE }}
+          MCS_MANAGER_ENDPOINT: ${{ secrets.MCS_MANAGER_ENDPOINT }}
+          MCS_MANAGER_DATAPACKS_DIR: ${{ secrets.MCS_MANAGER_DATAPACKS_DIR }}
+        run: |
+          bun dev:deploy
